@@ -1,234 +1,370 @@
 """
-Local Backtester for IMC Prosperity 4
-======================================
-Replays historical CSV data through your Trader class.
-Usage:
-    python backtester.py --prices data/prices_round_0_day_0.csv --trades data/trades_round_0_day_0.csv
+Parameter Sweep Backtester — IMC Prosperity 4
+==============================================
+Wraps prosperity4btest (https://github.com/nabayansaha/imc-prosperity-4-backtester)
+with a parameter grid search. For each combination it injects new constants into
+a temp copy of trader.py, runs the CLI, parses total P&L, and ranks results.
 
-Note: This backtester simulates order matching but cannot perfectly replicate
-the competition engine (bot reactions to your quotes are not simulated).
-It's useful for testing that your code runs without errors and for rough PnL estimates.
+Install the backtester once:
+    pip install -U prosperity4btest
+
+Usage:
+    python backtester.py                         # 50 random combos, round 0
+    python backtester.py --round 0               # explicit round (all days)
+    python backtester.py --round 0--2 0--1 0-0  # specific days, P&L summed
+    python backtester.py --full-grid             # exhaustive (can be slow)
+    python backtester.py --samples 100 --top 10
+    python backtester.py --match-trades worse    # match-trades mode
+
+Edit SWEEP_PARAMS below to control what gets swept.
+Set FIXED_PARAMS to hold specific parameters constant.
 """
 
+import subprocess
+import itertools
+import random
+import re
+import os
+import sys
 import csv
 import json
+import tempfile
 import argparse
-import sys
-from collections import defaultdict
-from datamodel import (
-    Listing, OrderDepth, Trade, TradingState, Order, Observation
-)
-from trader import Trader
+from io import StringIO
+from pathlib import Path
+from datetime import datetime
+
+TRADER_FILE   = Path(__file__).parent / 'trader.py'
+BACKTESTS_DIR = Path(__file__).parent / 'backtests'
+BACKTESTS_DIR.mkdir(exist_ok=True)
 
 
-def parse_prices_csv(filepath: str) -> dict:
+# ══════════════════════════════════════════════════════════════════════════════
+# PARAMETER SEARCH SPACE
+# ══════════════════════════════════════════════════════════════════════════════
+# Keys must exactly match the constant names at module level in trader.py.
+# Each value is a list of candidates to try.
+
+SWEEP_PARAMS = {
+    # ── TomatoTrader (TOMATOES mean-reversion market maker) ──────────────────
+    'TOMATO_EMA_ALPHA':   [0.1, 0.2, 0.3, 0.4, 0.5, 0.7],
+    'TOMATO_Z_ENTRY':     [1.0, 1.5, 2.0, 2.5],
+    'TOMATO_SPREAD_HALF': [3, 4, 5, 6],
+    'TOMATO_OBI_SKEW':    [0.0, 1.0, 2.0, 3.0],
+    'TOMATO_INV_SKEW':    [2.0, 4.0, 6.0],
+
+    # ── Uncomment to sweep StaticTrader (EMERALDS) in later rounds ───────────
+    # (StaticTrader has no tunable params right now — it uses wall-mid.)
+
+    # ── Add ETF / Option / Commodity params here when those rounds open ───────
+    # 'BASKET_THRESHOLDS': [[60,40], [80,50], [100,60]],
+    # 'ETF_HEDGE_FACTOR':  [0.3, 0.5, 0.7],
+    # 'UNDERLYING_MR_THR': [10, 15, 20],
+}
+
+# Parameters fixed at a specific value (excluded from sweep):
+FIXED_PARAMS: dict = {}
+# Example: keep OBI skew fixed while sweeping others:
+# FIXED_PARAMS = {'TOMATO_OBI_SKEW': 2.0}
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PARAMETER INJECTION
+# ══════════════════════════════════════════════════════════════════════════════
+
+def inject_params(source: str, params: dict) -> str:
     """
-    Parse the market orders/prices CSV.
-    Expected columns: day;timestamp;product;bid_price_1;bid_volume_1;
-                      ask_price_1;ask_volume_1;bid_price_2;bid_volume_2;...
-    Adjust parsing based on actual CSV format from Prosperity.
+    Patch scalar constant assignments in trader.py source.
+    Handles:  PARAM = 1.5   →   PARAM = <new_value>
+    Works for int, float, and list values.
+    Does NOT touch lines inside class bodies or functions.
     """
-    timestamps = defaultdict(dict)  # {timestamp: {product: OrderDepth}}
-
-    with open(filepath, 'r') as f:
-        reader = csv.DictReader(f, delimiter=';')
-        for row in reader:
-            ts = int(row.get('timestamp', 0))
-            product = row.get('product', '')
-
-            buy_orders = {}
-            sell_orders = {}
-
-            # Parse up to 3 price levels (adjust based on actual CSV format)
-            for i in range(1, 4):
-                bp_key = f'bid_price_{i}'
-                bv_key = f'bid_volume_{i}'
-                ap_key = f'ask_price_{i}'
-                av_key = f'ask_volume_{i}'
-
-                if bp_key in row and row[bp_key]:
-                    try:
-                        price = int(float(row[bp_key]))
-                        vol = int(float(row[bv_key]))
-                        if vol > 0:
-                            buy_orders[price] = buy_orders.get(price, 0) + vol
-                    except (ValueError, KeyError):
-                        pass
-
-                if ap_key in row and row[ap_key]:
-                    try:
-                        price = int(float(row[ap_key]))
-                        vol = int(float(row[av_key]))
-                        if vol > 0:
-                            sell_orders[price] = sell_orders.get(price, 0) - vol  # Negative!
-                    except (ValueError, KeyError):
-                        pass
-
-            if product:
-                od = OrderDepth()
-                od.buy_orders = buy_orders
-                od.sell_orders = sell_orders
-                timestamps[ts][product] = od
-
-    return dict(sorted(timestamps.items()))
-
-
-def parse_trades_csv(filepath: str) -> dict:
-    """Parse historical trades CSV."""
-    timestamps = defaultdict(lambda: defaultdict(list))
-
-    with open(filepath, 'r') as f:
-        reader = csv.DictReader(f, delimiter=';')
-        for row in reader:
-            ts = int(row.get('timestamp', 0))
-            product = row.get('symbol', row.get('product', ''))
-            price = int(float(row.get('price', 0)))
-            quantity = int(float(row.get('quantity', 0)))
-            buyer = row.get('buyer', '')
-            seller = row.get('seller', '')
-
-            trade = Trade(product, price, quantity, buyer, seller, ts)
-            timestamps[ts][product].append(trade)
-
-    return dict(timestamps)
-
-
-def match_orders(orders: list, order_depth: OrderDepth, position: int,
-                 limit: int) -> tuple:
-    """
-    Simulate order matching against the order book.
-    Returns: (trades, new_position, pnl)
-    """
-    trades = []
-    pnl = 0
-
-    # Check if total order quantity would breach limits
-    total_buy = sum(o.quantity for o in orders if o.quantity > 0)
-    total_sell = sum(abs(o.quantity) for o in orders if o.quantity < 0)
-
-    if position + total_buy > limit or position - total_sell < -limit:
-        return [], position, 0  # All orders rejected
-
-    for order in orders:
-        if order.quantity > 0:  # Buy order
-            remaining = order.quantity
-            for ask_price in sorted(order_depth.sell_orders.keys()):
-                if ask_price <= order.price and remaining > 0:
-                    available = abs(order_depth.sell_orders[ask_price])
-                    fill = min(remaining, available)
-                    trades.append(Trade(order.symbol, ask_price, fill,
-                                       "SUBMISSION", "", 0))
-                    position += fill
-                    pnl -= ask_price * fill
-                    remaining -= fill
-
-        elif order.quantity < 0:  # Sell order
-            remaining = abs(order.quantity)
-            for bid_price in sorted(order_depth.buy_orders.keys(), reverse=True):
-                if bid_price >= order.price and remaining > 0:
-                    available = order_depth.buy_orders[bid_price]
-                    fill = min(remaining, available)
-                    trades.append(Trade(order.symbol, bid_price, fill,
-                                       "", "SUBMISSION", 0))
-                    position -= fill
-                    pnl += bid_price * fill
-                    remaining -= fill
-
-    return trades, position, pnl
-
-
-def run_backtest(prices_file: str, trades_file: str = None):
-    """Run the full backtest."""
-    from trader import Trader, POSITION_LIMITS
-
-    trader = Trader()
-    price_data = parse_prices_csv(prices_file)
-    trade_data = parse_trades_csv(trades_file) if trades_file else {}
-
-    positions = defaultdict(int)
-    total_pnl = defaultdict(float)
-    trader_data = ""
-    products = set()
-
-    timestamps = sorted(price_data.keys())
-    print(f"Running backtest over {len(timestamps)} timestamps...")
-
-    for i, ts in enumerate(timestamps):
-        order_depths = price_data[ts]
-        products.update(order_depths.keys())
-
-        # Build listings
-        listings = {p: Listing(p, p, "XIRECS") for p in order_depths}
-
-        # Get market trades for this timestamp
-        market_trades = {}
-        for p in order_depths:
-            market_trades[p] = trade_data.get(ts, {}).get(p, [])
-
-        # Build state
-        state = TradingState(
-            traderData=trader_data,
-            timestamp=ts,
-            listings=listings,
-            order_depths=order_depths,
-            own_trades={p: [] for p in order_depths},
-            market_trades=market_trades,
-            position=dict(positions),
-            observations=Observation({}, {})
-        )
-
-        # Run trader
-        try:
-            result, conversions, trader_data = trader.run(state)
-        except Exception as e:
-            print(f"  ERROR at ts={ts}: {e}")
-            continue
-
-        # Match orders
-        for product, orders in result.items():
-            if product in order_depths:
-                limit = POSITION_LIMITS.get(product, 20)
-                trades, new_pos, pnl = match_orders(
-                    orders, order_depths[product],
-                    positions[product], limit
-                )
-                positions[product] = new_pos
-                total_pnl[product] += pnl
-
-    # Final PnL includes mark-to-market of remaining positions
-    print("\n" + "=" * 60)
-    print("BACKTEST RESULTS")
-    print("=" * 60)
-
-    grand_total = 0
-    for product in sorted(products):
-        realized = total_pnl[product]
-        pos = positions[product]
-        # Mark remaining position at last midprice
-        last_ts = timestamps[-1]
-        if product in price_data[last_ts]:
-            od = price_data[last_ts][product]
-            if od.buy_orders and od.sell_orders:
-                mid = (max(od.buy_orders.keys()) + min(od.sell_orders.keys())) / 2
-                mtm = pos * mid
-            else:
-                mtm = 0
+    for name, value in params.items():
+        if isinstance(value, float):
+            val_str = repr(value)          # e.g. 0.4
+        elif isinstance(value, int):
+            val_str = str(value)           # e.g. 4
+        elif isinstance(value, list):
+            val_str = repr(value)          # e.g. [6, 3, 1]
         else:
-            mtm = 0
+            val_str = repr(value)
 
-        total = realized + mtm
-        grand_total += total
-        print(f"  {product:25s}  Realized: {realized:>10.0f}  Position: {pos:>4d}  "
-              f"MtM: {mtm:>10.0f}  Total: {total:>10.0f}")
+        # Match: ^NAME   =   <anything up to end of line>
+        source = re.sub(
+            rf'^({re.escape(name)}\s*=\s*).*$',
+            rf'\g<1>{val_str}',
+            source,
+            flags=re.MULTILINE,
+        )
+    return source
 
-    print(f"\n  {'GRAND TOTAL':25s}  {grand_total:>52.0f}")
-    print("=" * 60)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# P&L PARSING
+# ══════════════════════════════════════════════════════════════════════════════
+
+def parse_pnl(output: str) -> float | None:
+    """
+    Extract total P&L from prosperity4btest stdout.
+
+    Primary format (printed to stdout):
+        Total profit: 25,146
+
+    When multiple days are run the last "Total profit:" line is the grand total.
+    Falls back to summing per-product lines if the grand total is absent.
+    """
+    # ── Strategy 1: last "Total profit: X" line (grand total across all days) ─
+    matches = re.findall(r'Total profit:\s*(-?[\d,]+)', output)
+    if matches:
+        # Last match = grand total when multiple days are printed
+        return float(matches[-1].replace(',', ''))
+
+    # ── Strategy 2: sum product lines  "PRODUCT: X,XXX" ─────────────────────
+    # e.g. "EMERALDS: 7,182" / "TOMATOES: 5,678"
+    # Only take the last block (last day) to avoid double-counting
+    product_matches = re.findall(r'^[A-Z_]+:\s*(-?[\d,]+)$', output, re.MULTILINE)
+    if product_matches:
+        # The last N product lines before the final summary
+        try:
+            return sum(float(v.replace(',', '')) for v in product_matches[-len(product_matches)//2 or len(product_matches):])
+        except Exception:
+            return sum(float(v.replace(',', '')) for v in product_matches)
+
+    # ── Strategy 3: Activities log CSV (log-file format) ─────────────────────
+    m = re.search(
+        r'Activities log:\s*\n(.*?)(?:\n\s*\nTrade History:|\n\s*\nSandbox|\Z)',
+        output, re.DOTALL
+    )
+    if m:
+        try:
+            reader = csv.DictReader(StringIO(m.group(1).strip()), delimiter=';')
+            last_pnl: dict[str, float] = {}
+            for row in reader:
+                product = row.get('product', '').strip()
+                raw     = row.get('profit_and_loss', '').strip()
+                if product and raw:
+                    last_pnl[product] = float(raw)
+            if last_pnl:
+                return sum(last_pnl.values())
+        except Exception:
+            pass
+
+    return None
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Prosperity 4 Backtester")
-    parser.add_argument("--prices", required=True, help="Path to prices/orders CSV")
-    parser.add_argument("--trades", default=None, help="Path to trades CSV")
-    args = parser.parse_args()
+# ══════════════════════════════════════════════════════════════════════════════
+# SINGLE BACKTEST RUN
+# ══════════════════════════════════════════════════════════════════════════════
 
-    run_backtest(args.prices, args.trades)
+def run_one(params: dict, round_days: list[str], extra_args: list[str]) -> float | None:
+    """
+    Inject params into a temp file, run prosperity4btest, return total P&L.
+    Returns None on timeout or parse failure.
+    """
+    source  = TRADER_FILE.read_text()
+    patched = inject_params(source, params)
+
+    tmp = tempfile.NamedTemporaryFile(
+        mode='w', suffix='.py', delete=False, prefix='trader_sweep_',
+        dir=tempfile.gettempdir()
+    )
+    tmp.write(patched)
+    tmp.close()
+
+    try:
+        cmd = (
+            ['prosperity4btest', tmp.name]
+            + round_days
+            + ['--no-out']
+            + extra_args
+        )
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+        return parse_pnl(proc.stdout + proc.stderr)
+
+    except subprocess.TimeoutExpired:
+        return None
+
+    except FileNotFoundError:
+        print('\n[ERROR] prosperity4btest not found.')
+        print('  Install with:  pip install -U prosperity4btest')
+        sys.exit(1)
+
+    finally:
+        os.unlink(tmp.name)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# GRID BUILDING
+# ══════════════════════════════════════════════════════════════════════════════
+
+def build_grid() -> list[dict]:
+    """Cartesian product of SWEEP_PARAMS minus fixed params."""
+    sweep = {k: v for k, v in SWEEP_PARAMS.items() if k not in FIXED_PARAMS}
+    keys  = list(sweep.keys())
+    grid  = []
+    for vals in itertools.product(*[sweep[k] for k in keys]):
+        combo = dict(FIXED_PARAMS)
+        combo.update(zip(keys, vals))
+        grid.append(combo)
+    return grid
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DISPLAY HELPERS
+# ══════════════════════════════════════════════════════════════════════════════
+
+SEP = '═' * 72
+sep = '─' * 72
+
+
+def fmt_params(combo: dict, keys: list) -> str:
+    return '  '.join(f'{k}={combo[k]}' for k in keys)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN
+# ══════════════════════════════════════════════════════════════════════════════
+
+def main():
+    ap = argparse.ArgumentParser(
+        description='Parameter sweep using prosperity4btest',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+examples:
+  python backtester.py                           # 50 random combos, round 0
+  python backtester.py --round 0--2 0--1 0-0    # three specific days
+  python backtester.py --full-grid               # exhaustive (slow)
+  python backtester.py --samples 30 --top 10
+  python backtester.py --match-trades worse
+        """
+    )
+    ap.add_argument('--round', nargs='+', default=['0'], metavar='SPEC',
+                    help='Round/day specifiers passed to prosperity4btest (default: 0)')
+    ap.add_argument('--full-grid', action='store_true',
+                    help='Run every combination (can be very slow)')
+    ap.add_argument('--samples', type=int, default=50,
+                    help='Random combos to try when not using --full-grid (default: 50)')
+    ap.add_argument('--top', type=int, default=5,
+                    help='Top N results to display (default: 5)')
+    ap.add_argument('--seed', type=int, default=42,
+                    help='RNG seed for reproducibility (default: 42)')
+    ap.add_argument('--match-trades', choices=['all', 'worse', 'none'], default=None,
+                    help='Trade matching mode (default: backtester default)')
+    args = ap.parse_args()
+
+    grid        = build_grid()
+    total_grid  = len(grid)
+    sweep_keys  = [k for k in SWEEP_PARAMS if k not in FIXED_PARAMS]
+
+    if args.full_grid:
+        combos = grid
+        mode   = f'FULL GRID ({total_grid} combos)'
+    else:
+        n      = min(args.samples, total_grid)
+        random.seed(args.seed)
+        combos = random.sample(grid, n)
+        mode   = f'RANDOM SAMPLE  {n} of {total_grid} possible combos'
+
+    extra_args = []
+    if args.match_trades:
+        extra_args += ['--match-trades', args.match_trades]
+
+    # ── Header ──────────────────────────────────────────────────────────────
+    print(SEP)
+    print(f'  IMC PROSPERITY 4 — PARAMETER SWEEP')
+    print(SEP)
+    print(f'  Mode       : {mode}')
+    print(f'  Round/days : {" ".join(args.round)}')
+    print(f'  Trader     : {TRADER_FILE}')
+    print(f'\n  Sweeping {len(sweep_keys)} parameters:')
+    for k in sweep_keys:
+        print(f'    {k:30s} {SWEEP_PARAMS[k]}')
+    if FIXED_PARAMS:
+        print(f'\n  Fixed:')
+        for k, v in FIXED_PARAMS.items():
+            print(f'    {k:30s} = {v}')
+    print(f'\n  Running {len(combos)} backtests...\n')
+    print(sep)
+
+    results: list[tuple[float, dict]] = []
+    best_pnl = float('-inf')
+    failed   = 0
+
+    for i, combo in enumerate(combos, 1):
+        print(f'  [{i:>{len(str(len(combos)))}}/{len(combos)}]  '
+              f'{fmt_params(combo, sweep_keys)}', end='  →  ', flush=True)
+
+        pnl = run_one(combo, args.round, extra_args)
+
+        if pnl is None:
+            print('FAILED (check backtester install or log format)')
+            failed += 1
+        else:
+            is_best = pnl > best_pnl
+            if is_best:
+                best_pnl = pnl
+            print(f'P&L = {pnl:>12.2f}' + ('  ← NEW BEST' if is_best else ''))
+            results.append((pnl, combo))
+
+    if not results:
+        print(f'\n[ERROR] All {len(combos)} runs failed.')
+        print('  • Is prosperity4btest installed?  pip install -U prosperity4btest')
+        print('  • Does round data exist?  Check https://github.com/nabayansaha/imc-prosperity-4-backtester')
+        sys.exit(1)
+
+    results.sort(key=lambda x: x[0], reverse=True)
+    show = min(args.top, len(results))
+
+    # ── Results table ────────────────────────────────────────────────────────
+    print(f'\n{SEP}')
+    print(f'  TOP {show} RESULTS  ({failed} failed / {len(results)} succeeded)')
+    print(SEP)
+
+    col_w = max(len(k) for k in sweep_keys) + 2
+    for rank, (pnl, combo) in enumerate(results[:show], 1):
+        marker = '  ★ BEST' if rank == 1 else ''
+        print(f'\n  #{rank}  P&L = {pnl:,.2f}{marker}')
+        for k in sweep_keys:
+            print(f'    {k:{col_w}s} = {combo[k]}')
+
+    # ── Best params block ────────────────────────────────────────────────────
+    best_pnl, best_combo = results[0]
+    print(f'\n{SEP}')
+    print(f'  BEST PARAMETERS — paste into trader.py')
+    print(sep)
+    for k in sweep_keys:
+        v = best_combo[k]
+        print(f'  {k:30s} = {v!r}')
+    print(sep)
+    print(f'  Best total P&L: {best_pnl:,.2f}')
+    print(f'  Baseline (current trader.py):')
+
+    # Show what the current trader.py has for comparison
+    source = TRADER_FILE.read_text()
+    for k in sweep_keys:
+        m = re.search(rf'^{re.escape(k)}\s*=\s*(.+)$', source, re.MULTILINE)
+        current = m.group(1).strip() if m else '(not found)'
+        print(f'    {k:30s} = {current}')
+
+    # ── Save results ─────────────────────────────────────────────────────────
+    ts       = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    out_file = BACKTESTS_DIR / f'sweep_{ts}.json'
+    with open(out_file, 'w') as f:
+        json.dump({
+            'timestamp':  ts,
+            'round_days': args.round,
+            'mode':       mode,
+            'fixed':      FIXED_PARAMS,
+            'sweep':      {k: SWEEP_PARAMS[k] for k in sweep_keys},
+            'results': [
+                {'rank': rank, 'pnl': pnl, 'params': combo}
+                for rank, (pnl, combo) in enumerate(results, 1)
+            ],
+        }, f, indent=2)
+
+    print(f'\n  Full results saved → {out_file}')
+    print(SEP)
+
+
+if __name__ == '__main__':
+    main()
