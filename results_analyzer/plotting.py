@@ -77,6 +77,8 @@ def plot_position(positions: pd.DataFrame, path: Path, product: str):
 
 
 def plot_trade_pnl_hist(round_trips: pd.DataFrame, path: Path, product: str):
+    if round_trips.empty or "product" not in round_trips.columns:
+        return
     g = round_trips[round_trips["product"] == product]
     if g.empty:
         return
@@ -88,6 +90,8 @@ def plot_trade_pnl_hist(round_trips: pd.DataFrame, path: Path, product: str):
 
 
 def plot_holding_time(round_trips: pd.DataFrame, path: Path, product: str):
+    if round_trips.empty or "product" not in round_trips.columns:
+        return
     g = round_trips[round_trips["product"] == product]
     if g.empty:
         return
@@ -98,6 +102,8 @@ def plot_holding_time(round_trips: pd.DataFrame, path: Path, product: str):
 
 
 def plot_mfe_mae(round_trips: pd.DataFrame, path: Path, product: str):
+    if round_trips.empty or "product" not in round_trips.columns:
+        return
     g = round_trips[round_trips["product"] == product].dropna(subset=["mfe", "mae"])
     if g.empty:
         return

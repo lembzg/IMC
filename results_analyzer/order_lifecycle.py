@@ -45,6 +45,8 @@ def build_lifecycle(run_orders: pd.DataFrame, run_fills: pd.DataFrame,
     if run_fills.empty:
         orders["filled_size"] = 0
         orders["fill_price"] = np.nan
+        orders["fill_fraction"] = 0.0
+        orders["was_passive"] = ~orders["was_aggressive"].fillna(False)
         return orders
 
     fills_grp = (run_fills.groupby(["ts", "product", "side", "price"])
