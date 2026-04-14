@@ -1,23 +1,23 @@
 """
 signal_tests.py
 ---------------
-Predictive power of z-score deviations and order book imbalance.
-
-Inputs:  features DF.
-Outputs: dicts + DataFrames describing conditional future returns.
-
-Trading decision informed:
-  * Z-score: if future return conditional on |z|>thr has opposite sign and
-    meaningful magnitude, a threshold-reversion strategy is viable.
-  * OBI: if future returns rise monotonically across OBI deciles, OBI is a
-    predictive directional tilt; can bias quotes/takes.
+Predictive power of z-score deviations and order book imbalance, with
+guards that stop the report from overclaiming on degenerate data.
 """
 from __future__ import annotations
 
+import logging
 from typing import Dict, List
 
 import numpy as np
 import pandas as pd
+
+log = logging.getLogger(__name__)
+
+# A reporting-row is "too thin" if fewer than this many observations.
+MIN_N = 50
+# Two rows are near-duplicates if this Jaccard of their trigger masks is met.
+DUP_JACCARD = 0.95
 
 
 def zscore_series(features: pd.DataFrame, window: int) -> pd.Series:
@@ -27,34 +27,58 @@ def zscore_series(features: pd.DataFrame, window: int) -> pd.Series:
     return (mid - mu) / sd
 
 
+def _mask_hash(mask: pd.Series) -> np.ndarray:
+    """Boolean mask as a packed uint64 fingerprint for fast Jaccard checks."""
+    return np.packbits(mask.fillna(False).to_numpy(dtype=bool))
+
+
+def _jaccard_packed(a: np.ndarray, b: np.ndarray) -> float:
+    n = min(len(a), len(b))
+    if n == 0:
+        return 0.0
+    # Bit-level approximation — exact Jaccard on the underlying boolean vectors
+    # requires unpacking; but we only need a similarity score.
+    inter = np.bitwise_and(a[:n], b[:n])
+    union = np.bitwise_or(a[:n], b[:n])
+    iw = int.from_bytes(inter.tobytes(), "little").bit_count()
+    uw = int.from_bytes(union.tobytes(), "little").bit_count()
+    return iw / uw if uw else 0.0
+
+
 def zscore_predictive(
     features: pd.DataFrame,
     windows: List[int],
     thresholds: List[float],
     horizons: List[int],
 ) -> pd.DataFrame:
-    """Conditional future return stats for |z| > threshold.
+    """Conditional future-return stats for |z| > threshold.
 
-    Expectation for reverting product: when z > thr, future return < 0
-    (win_rate_negative > 0.5 and mean_future_ret < 0).
+    Post-processing:
+      * rows with n < MIN_N are dropped (small sample);
+      * near-duplicate rows (same window/side/horizon, different threshold but
+        trigger mask overlap > DUP_JACCARD) are de-duplicated — only the
+        tightest threshold survives, and a ``collapsed_thresholds`` column
+        lists the thresholds that produced the same subset. This stops the
+        report from printing the same 168-row subset 12 times across threshold
+        grids when z rarely exceeds any threshold.
     """
     rows = []
     mid = features["mid"]
+
     for w in windows:
         z = zscore_series(features, w)
         for h in horizons:
-            fut = (mid.shift(-h) - mid) / mid  # fractional
+            fut = (mid.shift(-h) - mid) / mid
             for thr in thresholds:
-                hi_mask = z > thr
-                lo_mask = z < -thr
-                for side, mask in (("high", hi_mask), ("low", lo_mask)):
+                for side in ("high", "low"):
+                    mask = (z > thr) if side == "high" else (z < -thr)
                     r = fut[mask].dropna()
-                    if len(r) < 20:
+                    if len(r) < MIN_N:
                         continue
-                    expect_sign = -1 if side == "high" else 1
+                    expect_sign = -1 if side == "high" else +1
                     rows.append({
                         "window": w,
-                        "threshold": thr,
+                        "threshold": float(thr),
                         "horizon": h,
                         "side": side,
                         "n": int(len(r)),
@@ -62,8 +86,39 @@ def zscore_predictive(
                         "median_future_ret": float(r.median()),
                         "std_future_ret": float(r.std()),
                         "win_rate_reversion": float(((r * expect_sign) > 0).mean()),
+                        "_mask_hash": _mask_hash(mask),
                     })
-    return pd.DataFrame(rows)
+
+    if not rows:
+        return pd.DataFrame()
+    df = pd.DataFrame(rows)
+
+    # Deduplicate threshold rows within the same (window, side, horizon) whose
+    # trigger masks overlap >= DUP_JACCARD. Keep the highest threshold (most
+    # selective); record the others in collapsed_thresholds.
+    kept: List[dict] = []
+    for (w, side, h), grp in df.groupby(["window", "side", "horizon"],
+                                         sort=False):
+        grp = grp.sort_values("threshold", ascending=False).to_dict("records")
+        used = [False] * len(grp)
+        for i, row_i in enumerate(grp):
+            if used[i]:
+                continue
+            collapsed = [row_i["threshold"]]
+            for j in range(i + 1, len(grp)):
+                if used[j]:
+                    continue
+                sim = _jaccard_packed(row_i["_mask_hash"], grp[j]["_mask_hash"])
+                if sim >= DUP_JACCARD:
+                    collapsed.append(grp[j]["threshold"])
+                    used[j] = True
+            row_i["collapsed_thresholds"] = (
+                ",".join(f"{t:g}" for t in sorted(set(collapsed)))
+            )
+            kept.append(row_i)
+
+    out = pd.DataFrame(kept).drop(columns=["_mask_hash"])
+    return out.reset_index(drop=True)
 
 
 def obi_predictive(
@@ -74,7 +129,9 @@ def obi_predictive(
 ) -> pd.DataFrame:
     """Conditional future return by OBI decile.
 
-    Strong predictive OBI: mean_future_ret rises monotonically with OBI bucket.
+    Adds an ``n_buckets_effective`` column so downstream logic can tell when
+    qcut collapsed to too few distinct buckets (e.g. 2 when 10 were asked
+    for — the "monotonicity" claim is trivially true in that case).
     """
     rows = []
     if col not in features or features[col].isna().all():
@@ -85,6 +142,10 @@ def obi_predictive(
         buckets = pd.qcut(obi, n_buckets, labels=False, duplicates="drop")
     except ValueError:
         return pd.DataFrame(rows)
+    effective = int(buckets.dropna().nunique())
+    if effective < 3:
+        log.warning("OBI qcut on %s collapsed to %d buckets (asked for %d)",
+                    col, effective, n_buckets)
     for h in horizons:
         fut = (mid.shift(-h) - mid) / mid
         for b, g in fut.groupby(buckets):
@@ -98,12 +159,12 @@ def obi_predictive(
                 "mean_future_ret": float(r.mean()),
                 "median_future_ret": float(r.median()),
                 "obi_col": col,
+                "n_buckets_effective": effective,
             })
     return pd.DataFrame(rows)
 
 
 def obi_correlation(features: pd.DataFrame, horizons: List[int]) -> Dict[str, float]:
-    """Pearson corr(OBI_t, future_ret_{t,t+h}) per horizon & per OBI variant."""
     out: Dict[str, float] = {}
     mid = features["mid"]
     for col in ("obi_l1", "obi_total"):

@@ -16,10 +16,13 @@ Trading decision informed:
 """
 from __future__ import annotations
 
-from typing import Optional
+import logging
+from typing import Dict, Optional
 
 import numpy as np
 import pandas as pd
+
+log = logging.getLogger(__name__)
 
 
 def _safe(col: pd.Series) -> pd.Series:
@@ -45,13 +48,21 @@ def compute_market_features(
     book_mid = (df["best_bid"] + df["best_ask"]) / 2.0
     df["mid"] = book_mid.where(book_mid.notna(), df.get("mid_price"))
 
-    # Weighted mid (volume-weighted toward heavier side).
+    # Weighted mid: volume-weighted *toward* the heavier side — when bid volume
+    # dominates, quotes carry more weight on the bid, so weighted_mid sits below
+    # (heavy) ask and above (light) bid is not the intuition — the heavier side
+    # holds the price. Formula: (bb*bv + ba*av) / (bv+av).
+    #
+    # Microprice (Gatheral/Stoikov): volume-weighted *toward* the thinner side,
+    # because orders on the thin side get filled first so the next trade is more
+    # likely at that side's quote. Formula: (bb*av + ba*bv) / (bv+av).
+    #
+    # These two *must be distinct* — they were historically identical in this
+    # codebase (copy-paste bug). The assertion below catches regressions.
     bv, av = _safe(df["best_bid_vol"]), _safe(df["best_ask_vol"])
     denom = (bv + av).replace(0, np.nan)
-    df["weighted_mid"] = (df["best_bid"] * av + df["best_ask"] * bv) / denom
-    # Microprice: classic definition (tilts toward side with less volume, which
-    # tends to predict short-term direction better than mid).
-    df["microprice"] = (df["best_ask"] * bv + df["best_bid"] * av) / denom
+    df["weighted_mid"] = (df["best_bid"] * bv + df["best_ask"] * av) / denom
+    df["microprice"] = (df["best_bid"] * av + df["best_ask"] * bv) / denom
 
     # Depth (sum of L1..L3).
     bid_vol_cols = [c for c in ("bid_volume_1", "bid_volume_2", "bid_volume_3") if c in df]
@@ -79,7 +90,72 @@ def compute_market_features(
         df["trade_count"] = 0
         df["trade_volume"] = 0
 
+    _validate_features(df)
     return df
+
+
+def _validate_features(df: pd.DataFrame) -> None:
+    """Structural sanity checks on feature frame.
+
+    These catch silent regressions:
+      * weighted_mid and microprice must not be identical (the historical bug);
+      * OBI L1 and OBI total must have the same *sign* on average if both are
+        genuine imbalance measures of the same book. Opposite signs almost
+        always mean L2/L3 volume columns are mis-labeled.
+
+    Failures are logged as warnings, never raised — so analysis still runs
+    on quirky data — but they surface in the report's risk flags.
+    """
+    wm = df["weighted_mid"].dropna()
+    mp = df["microprice"].dropna()
+    both = df[["weighted_mid", "microprice"]].dropna()
+    if len(both) >= 20:
+        diff = (both["weighted_mid"] - both["microprice"]).abs().mean()
+        if diff < 1e-9:
+            log.warning("weighted_mid and microprice are numerically identical; "
+                        "check formula ordering")
+
+    ol1 = df.get("obi_l1")
+    otot = df.get("obi_total")
+    if ol1 is not None and otot is not None:
+        joined = pd.concat([ol1, otot], axis=1).dropna()
+        if len(joined) >= 50:
+            c = joined.corr().iloc[0, 1]
+            if np.isfinite(c) and c < 0:
+                log.warning("obi_l1 and obi_total have negative correlation "
+                            "(%.3f) — likely L2/L3 volume column mislabel", c)
+
+
+def feature_health(df: pd.DataFrame) -> Dict[str, object]:
+    """Surface-level feature-health indicators for the report.
+
+    Returned dict is consumed by report_generator risk flags.
+    """
+    out: Dict[str, object] = {}
+    both = df[["weighted_mid", "microprice"]].dropna()
+    if len(both) >= 20:
+        diff = (both["weighted_mid"] - both["microprice"]).abs().mean()
+        out["wm_micro_identical"] = bool(diff < 1e-9)
+        out["wm_micro_mean_abs_diff"] = float(diff)
+    else:
+        out["wm_micro_identical"] = False
+        out["wm_micro_mean_abs_diff"] = float("nan")
+
+    joined = pd.concat([df.get("obi_l1"), df.get("obi_total")], axis=1).dropna()
+    if len(joined) >= 50:
+        c = joined.corr().iloc[0, 1]
+        out["obi_l1_total_corr"] = float(c) if np.isfinite(c) else float("nan")
+        out["obi_signs_inconsistent"] = bool(np.isfinite(c) and c < 0)
+    else:
+        out["obi_l1_total_corr"] = float("nan")
+        out["obi_signs_inconsistent"] = False
+
+    spread = df["spread"].dropna()
+    if len(spread):
+        out["zero_spread_frac"] = float((spread <= 0).mean())
+    else:
+        out["zero_spread_frac"] = float("nan")
+    return out
 
 
 def _attach_vwap(prices: pd.DataFrame, trades: pd.DataFrame, window: int) -> pd.DataFrame:

@@ -93,9 +93,9 @@ def _analyze_one(
     # -- fair values
     fv_candidates = fair_value_models.build_fair_value_candidates(
         feats, cfg.ema_alphas, cfg.roll_windows)
-    for name, series in fv_candidates.items():
+    for name, cand in fv_candidates.items():
         if name not in feats:
-            feats[name] = series.values
+            feats[name] = cand.series.values
     fv_eval = fair_value_models.evaluate_fair_values(fv_candidates, feats, cfg.horizons)
     fv_eval.to_csv(tables_dir / "fair_value_eval.csv", index=False)
 
@@ -144,6 +144,7 @@ def _analyze_one(
             z_exits=z_exits,
             obi_thresholds=obi_thrs,
             position_limit=cfg.position_limit,
+            trades=trades_df,
         )
         for name, df in sweep_tables.items():
             df.to_csv(tables_dir / f"sweep_{name}.csv", index=False)
@@ -161,7 +162,7 @@ def _analyze_one(
         plotting.plot_obi_vs_future_ret(obi_pred, plots_dir / "08_obi_vs_future_ret.png")
 
         # Strategy benchmark plots: run the best-of each family and plot it.
-        _plot_best_strategies(feats, sweep_tables, plots_dir, cfg)
+        _plot_best_strategies(feats, sweep_tables, plots_dir, cfg, trades_df)
         # Heatmaps per family.
         _plot_heatmaps(sweep_tables, plots_dir)
 
@@ -191,23 +192,23 @@ def _analyze_one(
     }
 
 
-def _plot_best_strategies(feats, sweep_tables, plots_dir: Path, cfg: AnalyzerConfig):
+def _plot_best_strategies(feats, sweep_tables, plots_dir: Path, cfg: AnalyzerConfig, trades_df=None):
     from . import strategies as S
     # For each family, pick top PnL and re-run to plot.
     specs = {
         "fv_taker": lambda p: S.strat_fv_taker(feats, fv_col=p["fv_col"], edge=p["edge"],
-                                                position_limit=cfg.position_limit),
+                                                position_limit=cfg.position_limit, trades=trades_df),
         "fv_maker": lambda p: S.strat_fv_maker(feats, fv_col=p["fv_col"], width=p["width"],
-                                                position_limit=cfg.position_limit),
+                                                position_limit=cfg.position_limit, trades=trades_df),
         "ema_reversion": lambda p: S.strat_ema_reversion_taker(feats, alpha=p["alpha"], edge=p["edge"],
-                                                                position_limit=cfg.position_limit),
+                                                                position_limit=cfg.position_limit, trades=trades_df),
         "zscore": lambda p: S.strat_zscore(feats, window=int(p["window"]), entry=p["entry"],
-                                           exit_z=p["exit_z"], position_limit=cfg.position_limit),
+                                           exit_z=p["exit_z"], position_limit=cfg.position_limit, trades=trades_df),
         "obi_tilt": lambda p: S.strat_obi_tilt_taker(feats, threshold=p["threshold"],
-                                                     position_limit=cfg.position_limit),
+                                                     position_limit=cfg.position_limit, trades=trades_df),
         "hybrid_make_take": lambda p: S.strat_hybrid_make_take(feats, fv_col=p["fv_col"], edge=p["edge"],
                                                                 width=p["width"],
-                                                                position_limit=cfg.position_limit),
+                                                                position_limit=cfg.position_limit, trades=trades_df),
     }
     for name, runner in specs.items():
         df = sweep_tables.get(name)
