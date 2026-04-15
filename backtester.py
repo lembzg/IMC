@@ -34,7 +34,7 @@ from io import StringIO
 from pathlib import Path
 from datetime import datetime
 
-TRADER_FILE   = Path(__file__).parent / 'trader.py'
+TRADER_FILE   = Path(__file__).parent / 'trader_layer1.py'
 BACKTESTS_DIR = Path(__file__).parent / 'backtests'
 BACKTESTS_DIR.mkdir(exist_ok=True)
 
@@ -46,26 +46,26 @@ BACKTESTS_DIR.mkdir(exist_ok=True)
 # Each value is a list of candidates to try.
 
 SWEEP_PARAMS = {
-    # ── TomatoTrader (TOMATOES mean-reversion market maker) ──────────────────
-    'TOMATO_EMA_ALPHA':   [0.1, 0.2, 0.3, 0.4, 0.5, 0.7],
-    'TOMATO_Z_ENTRY':     [1.0, 1.5, 2.0, 2.5],
-    'TOMATO_SPREAD_HALF': [3, 4, 5, 6],
-    'TOMATO_OBI_SKEW':    [0.0, 1.0, 2.0, 3.0],
-    'TOMATO_INV_SKEW':    [2.0, 4.0, 6.0],
+    # ── ASH_COATED_OSMIUM sweep (trader_layer1) ───────────────────────────────
+    'ACO_SIZE_LO':   [15, 20, 25, 30, 35, 40],
+    'ACO_SIZE_MID':  [10, 15, 20, 25],
+    'ACO_SIZE_HI':   [6, 8, 10, 12],
 
-    # ── Uncomment to sweep StaticTrader (EMERALDS) in later rounds ───────────
-    # (StaticTrader has no tunable params right now — it uses wall-mid.)
-
-    # ── Add ETF / Option / Commodity params here when those rounds open ───────
-    # 'BASKET_THRESHOLDS': [[60,40], [80,50], [100,60]],
-    # 'ETF_HEDGE_FACTOR':  [0.3, 0.5, 0.7],
-    # 'UNDERLYING_MR_THR': [10, 15, 20],
+    'ACO_INV_MULT':    [4, 6, 8, 10, 12],
+    'ACO_BASE_SPREAD': [12, 14, 16],
 }
 
 # Parameters fixed at a specific value (excluded from sweep):
-FIXED_PARAMS: dict = {}
-# Example: keep OBI skew fixed while sweeping others:
-# FIXED_PARAMS = {'TOMATO_OBI_SKEW': 2.0}
+FIXED_PARAMS: dict = {
+    'ACO_POS_LIMIT': 80,
+}
+
+# Validity filter: only run combos satisfying these constraints.
+# Each entry is a tuple of (param_a, param_b) meaning param_a must be > param_b.
+COMBO_CONSTRAINTS: list = [
+    ('ACO_SIZE_LO', 'ACO_SIZE_MID'),
+    ('ACO_SIZE_MID', 'ACO_SIZE_HI'),
+]
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -89,9 +89,10 @@ def inject_params(source: str, params: dict) -> str:
         else:
             val_str = repr(value)
 
-        # Match: ^NAME   =   <anything up to end of line>
+        # Match: ^[whitespace]NAME   =   <anything up to end of line>
+        # Handles both module-level and indented class-level constants.
         source = re.sub(
-            rf'^({re.escape(name)}\s*=\s*).*$',
+            rf'^(\s*{re.escape(name)}\s*=\s*).*$',
             rf'\g<1>{val_str}',
             source,
             flags=re.MULTILINE,
@@ -198,14 +199,16 @@ def run_one(params: dict, round_days: list[str], extra_args: list[str]) -> float
 # ══════════════════════════════════════════════════════════════════════════════
 
 def build_grid() -> list[dict]:
-    """Cartesian product of SWEEP_PARAMS minus fixed params."""
+    """Cartesian product of SWEEP_PARAMS minus fixed params, filtered by COMBO_CONSTRAINTS."""
     sweep = {k: v for k, v in SWEEP_PARAMS.items() if k not in FIXED_PARAMS}
     keys  = list(sweep.keys())
     grid  = []
     for vals in itertools.product(*[sweep[k] for k in keys]):
         combo = dict(FIXED_PARAMS)
         combo.update(zip(keys, vals))
-        grid.append(combo)
+        if all(combo[a] > combo[b] for a, b in COMBO_CONSTRAINTS
+               if a in combo and b in combo):
+            grid.append(combo)
     return grid
 
 
@@ -238,14 +241,14 @@ examples:
   python backtester.py --match-trades worse
         """
     )
-    ap.add_argument('--round', nargs='+', default=['0'], metavar='SPEC',
-                    help='Round/day specifiers passed to prosperity4btest (default: 0)')
+    ap.add_argument('--round', nargs='+', default=['1-0', '1--1', '1--2'], metavar='SPEC',
+                    help='Round/day specifiers passed to prosperity4btest (default: 1-0 1--1 1--2)')
     ap.add_argument('--full-grid', action='store_true',
                     help='Run every combination (can be very slow)')
     ap.add_argument('--samples', type=int, default=50,
                     help='Random combos to try when not using --full-grid (default: 50)')
-    ap.add_argument('--top', type=int, default=5,
-                    help='Top N results to display (default: 5)')
+    ap.add_argument('--top', type=int, default=20,
+                    help='Top N results to display (default: 20)')
     ap.add_argument('--seed', type=int, default=42,
                     help='RNG seed for reproducibility (default: 42)')
     ap.add_argument('--match-trades', choices=['all', 'worse', 'none'], default=None,

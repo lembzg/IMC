@@ -10,8 +10,9 @@ from typing import List
 
 from .base import Parser
 from .imc_log import ImcLogParser
+from .imc_submission_log import ImcSubmissionLogParser
 
-_PARSERS: List[Parser] = [ImcLogParser()]
+_PARSERS: List[Parser] = [ImcSubmissionLogParser(), ImcLogParser()]
 
 
 def register_parser(parser: Parser) -> None:

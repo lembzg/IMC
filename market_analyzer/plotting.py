@@ -32,26 +32,35 @@ def _save(fig, path: Path):
 
 
 def plot_price_overview(features: pd.DataFrame, path: Path):
+    # Exclude rows where mid is invalid so zero-spikes never appear in the plot.
+    n_invalid = int(features["mid"].isna().sum())
+    f = features[features["mid"].notna()]
     fig, ax = plt.subplots(figsize=(11, 5))
-    ax.plot(features["timestamp"], features["mid"], label="mid", lw=0.8)
-    ax.plot(features["timestamp"], features["best_bid"], label="best_bid", lw=0.5, alpha=0.6)
-    ax.plot(features["timestamp"], features["best_ask"], label="best_ask", lw=0.5, alpha=0.6)
-    if features["weighted_mid"].notna().any():
-        ax.plot(features["timestamp"], features["weighted_mid"], label="weighted_mid", lw=0.5, alpha=0.8)
-    if "vwap" in features and features["vwap"].notna().any():
-        ax.plot(features["timestamp"], features["vwap"], label="vwap", lw=0.8, alpha=0.8)
-    ax.set_title("Price overview")
+    ax.plot(f["timestamp"], f["mid"], label="mid", lw=0.8)
+    ax.plot(f["timestamp"], f["best_bid"], label="best_bid", lw=0.5, alpha=0.6)
+    ax.plot(f["timestamp"], f["best_ask"], label="best_ask", lw=0.5, alpha=0.6)
+    if f["weighted_mid"].notna().any():
+        ax.plot(f["timestamp"], f["weighted_mid"], label="weighted_mid", lw=0.5, alpha=0.8)
+    if "vwap" in f and f["vwap"].notna().any():
+        ax.plot(f["timestamp"], f["vwap"], label="vwap", lw=0.8, alpha=0.8)
+    title = "Price overview"
+    if n_invalid:
+        title += f"  ({n_invalid} invalid-mid snapshots excluded)"
+    ax.set_title(title)
     ax.set_xlabel("timestamp")
     ax.legend(loc="best", fontsize=8)
     _save(fig, path)
 
 
 def plot_spread_depth(features: pd.DataFrame, path: Path):
+    # Drop rows where spread is NaN (invalid L1 snapshots) so zero-spikes
+    # never appear in the spread panel.
+    f = features[features["spread"].notna()]
     fig, axs = plt.subplots(2, 1, figsize=(11, 6), sharex=True)
-    axs[0].plot(features["timestamp"], features["spread"], lw=0.6)
+    axs[0].plot(f["timestamp"], f["spread"], lw=0.6)
     axs[0].set_title("Spread")
-    axs[1].plot(features["timestamp"], features["bid_depth"], lw=0.6, label="bid_depth")
-    axs[1].plot(features["timestamp"], features["ask_depth"], lw=0.6, label="ask_depth")
+    axs[1].plot(f["timestamp"], f["bid_depth"], lw=0.6, label="bid_depth")
+    axs[1].plot(f["timestamp"], f["ask_depth"], lw=0.6, label="ask_depth")
     axs[1].set_title("Depth (sum L1-L3)")
     axs[1].legend(fontsize=8)
     _save(fig, path)
@@ -92,6 +101,7 @@ def plot_return_autocorr(features: pd.DataFrame, path: Path, max_lag: int = 30):
 
 def plot_return_distribution(features: pd.DataFrame, path: Path):
     r = features["log_ret"].dropna()
+    r = r[np.isfinite(r)]
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.hist(r, bins=60)
     ax.set_title("Return distribution")
@@ -99,10 +109,16 @@ def plot_return_distribution(features: pd.DataFrame, path: Path):
 
 
 def plot_rolling_vol_spread(features: pd.DataFrame, path: Path):
+    # Both series are NaN at invalid-mid / invalid-spread ticks; drop them so
+    # matplotlib draws clean lines without gaps caused by those bad snapshots.
+    vol_valid = features["realized_vol"].notna()
+    spr_valid = features["rolling_spread"].notna()
     fig, axs = plt.subplots(2, 1, figsize=(11, 5), sharex=True)
-    axs[0].plot(features["timestamp"], features["realized_vol"], lw=0.7)
+    axs[0].plot(features.loc[vol_valid, "timestamp"],
+                features.loc[vol_valid, "realized_vol"], lw=0.7)
     axs[0].set_title("Rolling realized volatility")
-    axs[1].plot(features["timestamp"], features["rolling_spread"], lw=0.7)
+    axs[1].plot(features.loc[spr_valid, "timestamp"],
+                features.loc[spr_valid, "rolling_spread"], lw=0.7)
     axs[1].set_title("Rolling mean spread")
     _save(fig, path)
 
@@ -122,7 +138,8 @@ def plot_obi_vs_future_ret(obi_table: pd.DataFrame, path: Path):
 
 def plot_strategy_result(res: SimResult, features: pd.DataFrame, path: Path):
     fig, axs = plt.subplots(3, 1, figsize=(11, 8), sharex=True)
-    axs[0].plot(features["timestamp"], features["mid"], lw=0.6)
+    valid_mid = features["mid"].notna()
+    axs[0].plot(features.loc[valid_mid, "timestamp"], features.loc[valid_mid, "mid"], lw=0.6)
     if not res.fills.empty:
         buys = res.fills[res.fills["side"] > 0]
         sells = res.fills[res.fills["side"] < 0]

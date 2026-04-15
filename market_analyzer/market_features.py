@@ -44,9 +44,27 @@ def compute_market_features(
     df["best_ask_vol"] = df["ask_volume_1"]
     df["spread"] = df["best_ask"] - df["best_bid"]
 
-    # Mid (fallback to provided mid_price if L1 missing).
-    book_mid = (df["best_bid"] + df["best_ask"]) / 2.0
-    df["mid"] = book_mid.where(book_mid.notna(), df.get("mid_price"))
+    # Mid: valid only when both best_bid and best_ask are strictly positive.
+    # A zero or missing quote (common when one side of the book is empty)
+    # produces NaN rather than a spurious 0, so invalid snapshots are excluded
+    # from all mid-based analytics rather than distorting them.
+    valid_l1 = (df["best_bid"] > 0) & (df["best_ask"] > 0)
+    # Spread is only meaningful when both sides are present and positive.
+    df["spread"] = df["spread"].where(valid_l1)
+    book_mid = ((df["best_bid"] + df["best_ask"]) / 2.0).where(valid_l1)
+    # Fallback to the CSV-supplied mid_price column only when it is positive.
+    _fallback = df.get("mid_price")
+    if _fallback is not None:
+        _fallback = _fallback.where(_fallback > 0)
+    df["mid"] = book_mid if _fallback is None else book_mid.where(book_mid.notna(), _fallback)
+
+    _n_invalid_mid = int(df["mid"].isna().sum())
+    if _n_invalid_mid:
+        log.warning(
+            "%d / %d snapshots have invalid mid (no valid best_bid + best_ask); "
+            "these are excluded from mid-based analytics",
+            _n_invalid_mid, len(df),
+        )
 
     # Weighted mid: volume-weighted *toward* the heavier side — when bid volume
     # dominates, quotes carry more weight on the bid, so weighted_mid sits below
@@ -77,7 +95,9 @@ def compute_market_features(
     df["obi_total"] = (df["bid_depth"] - df["ask_depth"]) / total_sum
 
     # Returns + realized vol (std of log returns over window).
-    df["ret"] = df["mid"].pct_change()
+    # fill_method=None prevents NaN mids being forward-filled before the diff,
+    # which would otherwise insert spurious 0-returns at invalid-mid ticks.
+    df["ret"] = df["mid"].pct_change(fill_method=None)
     df["log_ret"] = np.log(df["mid"] / df["mid"].shift(1))
     df["realized_vol"] = df["log_ret"].rolling(vol_window, min_periods=10).std()
     df["rolling_spread"] = df["spread"].rolling(vol_window, min_periods=5).mean()
@@ -185,13 +205,18 @@ def summarize(features: pd.DataFrame) -> dict:
 
     Decision informed: is this product quiet/stable or noisy/illiquid?
     """
-    mid = features["mid"].dropna()
+    all_mid = features["mid"]
+    mid = all_mid.dropna()
+    n_valid = int(len(mid))
+    n_invalid = int(all_mid.isna().sum())
     return {
         "n_ticks": int(len(features)),
-        "mid_mean": float(mid.mean()) if len(mid) else np.nan,
-        "mid_std": float(mid.std()) if len(mid) else np.nan,
-        "mid_min": float(mid.min()) if len(mid) else np.nan,
-        "mid_max": float(mid.max()) if len(mid) else np.nan,
+        "n_valid_mid": n_valid,
+        "n_invalid_mid": n_invalid,
+        "mid_mean": float(mid.mean()) if n_valid else np.nan,
+        "mid_std": float(mid.std()) if n_valid else np.nan,
+        "mid_min": float(mid.min()) if n_valid else np.nan,
+        "mid_max": float(mid.max()) if n_valid else np.nan,
         "spread_mean": float(features["spread"].mean()),
         "spread_median": float(features["spread"].median()),
         "bid_depth_mean": float(features["bid_depth"].mean()),
