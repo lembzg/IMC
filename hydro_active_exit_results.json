@@ -1,0 +1,302 @@
+[
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.25,
+      "exit": 0.0,
+      "target": 75
+    },
+    "day_pnl": {
+      "3-0": -941,
+      "3-1": -7587,
+      "3-2": -4359
+    },
+    "total_pnl": -12887
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.25,
+      "exit": 0.0,
+      "target": 100
+    },
+    "day_pnl": {
+      "3-0": -941,
+      "3-1": -7587,
+      "3-2": -4359
+    },
+    "total_pnl": -12887
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.25,
+      "exit": 0.0,
+      "target": 150
+    },
+    "day_pnl": {
+      "3-0": -941,
+      "3-1": -7587,
+      "3-2": -4359
+    },
+    "total_pnl": -12887
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.25,
+      "exit": 0.0,
+      "target": 200
+    },
+    "day_pnl": {
+      "3-0": -941,
+      "3-1": -7587,
+      "3-2": -4359
+    },
+    "total_pnl": -12887
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.25,
+      "exit": 0.0,
+      "target": 50
+    },
+    "day_pnl": {
+      "3-0": 512,
+      "3-1": -9225,
+      "3-2": -4779
+    },
+    "total_pnl": -13492
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.0,
+      "target": 100
+    },
+    "day_pnl": {
+      "3-0": -5929,
+      "3-1": -3027,
+      "3-2": -8406
+    },
+    "total_pnl": -17362
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.0,
+      "target": 75
+    },
+    "day_pnl": {
+      "3-0": -5929,
+      "3-1": -3027,
+      "3-2": -8406
+    },
+    "total_pnl": -17362
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.0,
+      "target": 150
+    },
+    "day_pnl": {
+      "3-0": -5929,
+      "3-1": -3027,
+      "3-2": -8406
+    },
+    "total_pnl": -17362
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.0,
+      "target": 200
+    },
+    "day_pnl": {
+      "3-0": -5929,
+      "3-1": -3027,
+      "3-2": -8406
+    },
+    "total_pnl": -17362
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.0,
+      "target": 50
+    },
+    "day_pnl": {
+      "3-0": -7208,
+      "3-1": -6544,
+      "3-2": -8855
+    },
+    "total_pnl": -22607
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.25,
+      "target": 75
+    },
+    "day_pnl": {
+      "3-0": -25117,
+      "3-1": -19998,
+      "3-2": -23927
+    },
+    "total_pnl": -69042
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.25,
+      "target": 100
+    },
+    "day_pnl": {
+      "3-0": -25117,
+      "3-1": -19998,
+      "3-2": -23927
+    },
+    "total_pnl": -69042
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.25,
+      "target": 150
+    },
+    "day_pnl": {
+      "3-0": -25117,
+      "3-1": -19998,
+      "3-2": -23927
+    },
+    "total_pnl": -69042
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.25,
+      "target": 200
+    },
+    "day_pnl": {
+      "3-0": -25117,
+      "3-1": -19998,
+      "3-2": -23927
+    },
+    "total_pnl": -69042
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.5,
+      "target": 75
+    },
+    "day_pnl": {
+      "3-0": -28013,
+      "3-1": -22768,
+      "3-2": -27811
+    },
+    "total_pnl": -78592
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.5,
+      "target": 100
+    },
+    "day_pnl": {
+      "3-0": -28013,
+      "3-1": -22768,
+      "3-2": -27811
+    },
+    "total_pnl": -78592
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.5,
+      "target": 150
+    },
+    "day_pnl": {
+      "3-0": -28013,
+      "3-1": -22768,
+      "3-2": -27811
+    },
+    "total_pnl": -78592
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.5,
+      "target": 200
+    },
+    "day_pnl": {
+      "3-0": -28013,
+      "3-1": -22768,
+      "3-2": -27811
+    },
+    "total_pnl": -78592
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.25,
+      "target": 50
+    },
+    "day_pnl": {
+      "3-0": -31106,
+      "3-1": -25820,
+      "3-2": -28711
+    },
+    "total_pnl": -85637
+  },
+  {
+    "params": {
+      "mode": "revert",
+      "lookback": 300,
+      "entry": 2.0,
+      "exit": 0.5,
+      "target": 50
+    },
+    "day_pnl": {
+      "3-0": -35072,
+      "3-1": -28951,
+      "3-2": -33334
+    },
+    "total_pnl": -97357
+  }
+]

@@ -1,8 +1,8 @@
 from datamodel import OrderDepth, UserId, TradingState, Order
-from typing import List, Tuple, Dict
+from typing import List
 import json
 from collections import defaultdict
-# import jsonpckle
+
 
 class Logger:
     def __init__(self):
@@ -33,153 +33,127 @@ class Logger:
         ], separators=(",", ":")))
         self.logs = ""
 
+
 logger = Logger()
 
+
 class Trader:
-    def run(self, state: TradingState) -> Tuple[Dict[str, List[Order]], int, str]:
+    def bid(self):
+        return 1
+
+    def run(self, state: TradingState):
         result = defaultdict(list)
         conversions = 0
-        
-        # Execute individual product strategies, passing state to each
-        result['ASH_COATED_OSMIUM'], ash_data = self.ash(state)
-        result['INTARIAN_PEPPER_ROOT'], root_data = self.root(state)
-        
-        # Combine the respective data dictionaries into a single payload
-        traderData = json.dumps({"ash_data": ash_data, "root_data":root_data})
-        
-        # Flush logger using the properly constructed traderData
-        logger.flush(state, dict(result), conversions, traderData)
-        
-        return dict(result), conversions, traderData
-    
-    def ash(self, state: TradingState):
-        result = []
-        symbol = 'ASH_COATED_OSMIUM'
-        sma_window = 10
-        pos_limit = 80
-        reasonable_range = 3
-        # reduce_range = 1
-        
-        # 1. Deserialize state specific to INTARIAN_PEPPER_ROOT
-        ash_data = {"bid_hist": [], "ask_hist": []}
+        shared = {}
         if state.traderData:
             try:
-                parsed_data = json.loads(state.traderData)
-                if "ash_data" in parsed_data:
-                    ash_data = parsed_data["ash_data"]
+                shared = json.loads(state.traderData)
             except json.JSONDecodeError:
                 pass
-                
-        if symbol not in state.order_depths:
-            return result, ash_data
-            
-        order_depth = state.order_depths[symbol]
-        
-        # 2. Extract best bid/ask and Forward Fill if missing
-        curr_best_bid = max(order_depth.buy_orders.keys()) if len(order_depth.buy_orders) > 0 else None
-        curr_best_ask = min(order_depth.sell_orders.keys()) if len(order_depth.sell_orders) > 0 else None
-        
-        best_bid = curr_best_bid if curr_best_bid is not None else (ash_data["bid_hist"][-1] if ash_data["bid_hist"] else None)
-        best_ask = curr_best_ask if curr_best_ask is not None else (ash_data["ask_hist"][-1] if ash_data["ask_hist"] else None)
-        
-        # 3. Update History
-        if best_bid is not None:
-            ash_data["bid_hist"].append(best_bid)
-        if best_ask is not None:
-            ash_data["ask_hist"].append(best_ask)
-            
-        if len(ash_data["bid_hist"]) > sma_window:
-            ash_data["bid_hist"].pop(0)
-        if len(ash_data["ask_hist"]) > sma_window:
-            ash_data["ask_hist"].pop(0)
-            
-        # If still warming up, return empty orders but save updated history
-        if len(ash_data["bid_hist"]) < sma_window or len(ash_data["ask_hist"]) < sma_window:
-            return result, ash_data
-        
-        # 4. Calculate indicators and risk metrics
-        bid_sma = sum(ash_data["bid_hist"]) / sma_window
-        ask_sma = sum(ash_data["ask_hist"]) / sma_window
-        fair_value = (bid_sma + ask_sma) / 2.0
-        
-        pos = state.position.get(symbol, 0)
-        buy_capacity = pos_limit - pos
-        sell_capacity = pos_limit + pos
-        
-        # --- 5. EXECUTION TIER A: Reduce Position near Fair Value ---
-        fv_true = round(fair_value)
-        for fv_round in reversed([ fv_true - 1, fv_true, fv_true + 1]):
-            if pos > 0 and fv_round in order_depth.buy_orders:
-                vol = min(pos, order_depth.buy_orders[fv_round])
-                result.append(Order(symbol, fv_round, -vol))
-                sell_capacity -= vol
-                pos -= vol
-            
-        fv_true = round(fair_value)
-        for fv_round in [fv_true - 2, fv_true - 1, fv_true, fv_true + 1]:
-            if pos < 0 and fv_round in order_depth.sell_orders:
-                vol = min(abs(pos), abs(order_depth.sell_orders[fv_round]))
-                result.append(Order(symbol, fv_round, vol))
-                buy_capacity -= vol
-                pos += vol
-            
-        # --- 6. EXECUTION TIER B: Active Taking for Mispricings ---
-        for ask_px in sorted(order_depth.sell_orders.keys()):
-            if ask_px < fair_value and buy_capacity > 0:
-                vol = min(buy_capacity, abs(order_depth.sell_orders[ask_px]))
-                result.append(Order(symbol, ask_px, vol))
-                buy_capacity -= vol
-                
-        for bid_px in sorted(order_depth.buy_orders.keys(), reverse=True):
-            if bid_px > fair_value and sell_capacity > 0:
-                vol = min(sell_capacity, order_depth.buy_orders[bid_px])
-                result.append(Order(symbol, bid_px, -vol))
-                sell_capacity -= vol
-                
-        # --- 7. EXECUTION TIER C: Passive Market Making (Pennying) ---
-        passive_size = 20
 
-        if best_bid is not None and best_bid - bid_sma <= reasonable_range and buy_capacity > 0:
-            my_bid = best_bid + 1
-            if my_bid < fair_value:
-                result.append(Order(symbol, my_bid, min(passive_size, buy_capacity)))
-                    
-        if best_ask is not None and ask_sma - best_ask <= reasonable_range and sell_capacity > 0:
-            my_ask = best_ask - 1
-            if my_ask > fair_value:
-                result.append(Order(symbol, my_ask, -min(passive_size, sell_capacity)))
-                
-        
-        return result, ash_data
-        
-    def root(self, state: TradingState):
-        product = "INTARIAN_PEPPER_ROOT"
-        pos = state.position.get(product, 0)
-        pos_lim = 80
+        result['HYDROGEL_PACK'], hydro_data = self.hydro(state, shared)
+        result['VELVETFRUIT_EXTRACT'], vev_data = self.vev(state, shared)
+
+        traderData = json.dumps({**hydro_data, **vev_data})
+        logger.flush(state, result, conversions, traderData)
+        return result, conversions, traderData
+
+    # HYDROGEL_PACK — pure passive maker
+    # Just sit inside the spread and collect edge when bots cross into us
+    def hydro(self, state: TradingState, shared: dict):
+        product = 'HYDROGEL_PACK'
+        result = []
+        pos_lim = 200
+        quote_size = 3
 
         if product not in state.order_depths:
-            return []
+            return result, {}
 
-        sell_orders = state.order_depths[product].sell_orders
-        if not sell_orders:
-            return []
+        order_depth = state.order_depths[product]
+        bids = sorted(order_depth.buy_orders, reverse=True)
+        asks = sorted(order_depth.sell_orders)
 
-        best_ask = min(sell_orders.keys())
-        best_ask_vol = abs(sell_orders[best_ask])
+        if not bids or not asks:
+            return result, {}
 
-        remaining = pos_lim - pos
-        if remaining <= 0:
-            return []
+        best_bid = bids[0]
+        best_ask = asks[0]
+        fair_value = (best_bid + best_ask) / 2.0
 
-        if state.timestamp < 20_000:
-            clip = 30
-        elif state.timestamp < 60_000:
-            clip = 20
-        else:
-            return []
+        pos = state.position.get(product, 0)
+        buy_room = pos_lim - pos
+        sell_room = pos_lim + pos
 
-        qty = min(clip, remaining, best_ask_vol)
-        if qty > 0:
-            return [Order(product, best_ask, qty)]
+        spread = best_ask - best_bid
+        passive_bid = best_bid + 1 if spread >= 3 else best_bid
+        passive_ask = best_ask - 1 if spread >= 3 else best_ask
 
-        return []
+        if buy_room > 0 and passive_bid < fair_value:
+            result.append(Order(product, passive_bid, min(quote_size, buy_room)))
+        if sell_room > 0 and passive_ask > fair_value:
+            result.append(Order(product, passive_ask, -min(quote_size, sell_room)))
+
+        return result, {}
+
+    # VELVETFRUIT_EXTRACT — EMA reversion taker + passive maker
+    # EMA(0.05) as FV, take when price deviates > 3 ticks from EMA
+    def vev(self, state: TradingState, shared: dict):
+        product = 'VELVETFRUIT_EXTRACT'
+        result = []
+        pos_lim = 200
+        quote_size = 10
+        alpha = 0.2
+        take_edge = 2
+
+        if product not in state.order_depths:
+            return result, shared.get('vev_state', {})
+
+        order_depth = state.order_depths[product]
+        bids = sorted(order_depth.buy_orders, reverse=True)
+        asks = sorted(order_depth.sell_orders)
+
+        if not bids or not asks:
+            return result, shared.get('vev_state', {})
+
+        best_bid = bids[0]
+        best_ask = asks[0]
+        mid = (best_bid + best_ask) / 2.0
+
+        # EMA fair value
+        ema = shared.get('vev_ema', mid)
+        ema = alpha * mid + (1 - alpha) * ema
+
+        pos = state.position.get(product, 0)
+        buy_room = pos_lim - pos
+        sell_room = pos_lim + pos
+
+        # Take when price deviates from EMA by more than take_edge
+        for ask_px in asks:
+            if ask_px <= ema - take_edge and buy_room > 0:
+                qty = min(abs(order_depth.sell_orders[ask_px]), buy_room)
+                if qty > 0:
+                    result.append(Order(product, ask_px, qty))
+                    buy_room -= qty
+            else:
+                break
+
+        for bid_px in bids:
+            if bid_px >= ema + take_edge and sell_room > 0:
+                qty = min(order_depth.buy_orders[bid_px], sell_room)
+                if qty > 0:
+                    result.append(Order(product, bid_px, -qty))
+                    sell_room -= qty
+            else:
+                break
+
+        # Passive making
+        spread = best_ask - best_bid
+        passive_bid = best_bid + 1 if spread >= 3 else best_bid
+        passive_ask = best_ask - 1 if spread >= 3 else best_ask
+
+        if buy_room > 0 and passive_bid < ema:
+            result.append(Order(product, passive_bid, min(quote_size, buy_room)))
+        if sell_room > 0 and passive_ask > ema:
+            result.append(Order(product, passive_ask, -min(quote_size, sell_room)))
+
+        return result, {'vev_ema': ema}

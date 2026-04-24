@@ -1,0 +1,31 @@
+{
+  "run_id": "rust-join-round2",
+  "trader": "trader_ash_join.py",
+  "dataset": "ROUND-2",
+  "results": [
+    {
+      "set": "D-1",
+      "day": -1,
+      "tick_count": 10000,
+      "own_trade_count": 236,
+      "final_pnl_total": 82573.0,
+      "run_dir": "runs/rust-join-round2-round-2-day-1"
+    },
+    {
+      "set": "D=0",
+      "day": 0,
+      "tick_count": 10000,
+      "own_trade_count": 241,
+      "final_pnl_total": 83010.0,
+      "run_dir": "runs/rust-join-round2-round-2-day-0"
+    },
+    {
+      "set": "D+1",
+      "day": 1,
+      "tick_count": 10000,
+      "own_trade_count": 257,
+      "final_pnl_total": 82900.0,
+      "run_dir": "runs/rust-join-round2-round-2-day+1"
+    }
+  ]
+}

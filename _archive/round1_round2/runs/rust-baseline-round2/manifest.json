@@ -1,0 +1,31 @@
+{
+  "run_id": "rust-baseline-round2",
+  "trader": "trader_baseline.py",
+  "dataset": "ROUND-2",
+  "results": [
+    {
+      "set": "D-1",
+      "day": -1,
+      "tick_count": 10000,
+      "own_trade_count": 676,
+      "final_pnl_total": 99277.0,
+      "run_dir": "runs/rust-baseline-round2-round-2-day-1"
+    },
+    {
+      "set": "D=0",
+      "day": 0,
+      "tick_count": 10000,
+      "own_trade_count": 696,
+      "final_pnl_total": 100060.0,
+      "run_dir": "runs/rust-baseline-round2-round-2-day-0"
+    },
+    {
+      "set": "D+1",
+      "day": 1,
+      "tick_count": 10000,
+      "own_trade_count": 695,
+      "final_pnl_total": 98861.0,
+      "run_dir": "runs/rust-baseline-round2-round-2-day+1"
+    }
+  ]
+}

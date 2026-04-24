@@ -34,7 +34,8 @@ from io import StringIO
 from pathlib import Path
 from datetime import datetime
 
-TRADER_FILE   = Path(__file__).parent / 'trader_layer1.py'
+TRADER_FILE   = Path(__file__).parent / 'trader_hydro_test_fill.py'
+DATA_DIR      = Path(__file__).parent / 'data_bt'
 BACKTESTS_DIR = Path(__file__).parent / 'backtests'
 BACKTESTS_DIR.mkdir(exist_ok=True)
 
@@ -46,26 +47,18 @@ BACKTESTS_DIR.mkdir(exist_ok=True)
 # Each value is a list of candidates to try.
 
 SWEEP_PARAMS = {
-    # ── ASH_COATED_OSMIUM sweep (trader_layer1) ───────────────────────────────
-    'ACO_SIZE_LO':   [15, 20, 25, 30, 35, 40],
-    'ACO_SIZE_MID':  [10, 15, 20, 25],
-    'ACO_SIZE_HI':   [6, 8, 10, 12],
-
-    'ACO_INV_MULT':    [4, 6, 8, 10, 12],
-    'ACO_BASE_SPREAD': [12, 14, 16],
+    # ── HYDROGEL_PACK z-score mean-reversion sweep ────────────────────────────
+    'LOOKBACK': [400, 500, 600, 700],
+    'ENTRY':    [1.75, 2.0, 2.25, 2.5, 2.75, 3.0],
+    'TARGET':   [25, 50, 75, 100, 150, 200],
 }
 
 # Parameters fixed at a specific value (excluded from sweep):
-FIXED_PARAMS: dict = {
-    'ACO_POS_LIMIT': 80,
-}
+FIXED_PARAMS: dict = {}
 
 # Validity filter: only run combos satisfying these constraints.
 # Each entry is a tuple of (param_a, param_b) meaning param_a must be > param_b.
-COMBO_CONSTRAINTS: list = [
-    ('ACO_SIZE_LO', 'ACO_SIZE_MID'),
-    ('ACO_SIZE_MID', 'ACO_SIZE_HI'),
-]
+COMBO_CONSTRAINTS: list = []
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -176,7 +169,7 @@ def run_one(params: dict, round_days: list[str], extra_args: list[str]) -> float
         cmd = (
             ['prosperity4btest', tmp.name]
             + round_days
-            + ['--no-out']
+            + ['--no-out', '--data', str(DATA_DIR)]
             + extra_args
         )
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
@@ -241,7 +234,7 @@ examples:
   python backtester.py --match-trades worse
         """
     )
-    ap.add_argument('--round', nargs='+', default=['1-0', '1--1', '1--2'], metavar='SPEC',
+    ap.add_argument('--round', nargs='+', default=['3-0', '3-1', '3-2'], metavar='SPEC',
                     help='Round/day specifiers passed to prosperity4btest (default: 1-0 1--1 1--2)')
     ap.add_argument('--full-grid', action='store_true',
                     help='Run every combination (can be very slow)')
