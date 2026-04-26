@@ -36,9 +36,15 @@ logger = Logger()
 
 class Trader:
     HYDRO_POS_LIMIT = 200
-    HYDRO_TARGET = 50
-    HYDRO_LOOKBACK = 100
-    HYDRO_ENTRY_Z = 2.25
+
+    # How far back to measure gradient (short window captures the local slope)
+    GRADIENT_WINDOW = 500
+
+    # Minimum absolute gradient to act (filters noise / flat periods)
+    GRADIENT_THRESHOLD = 0.00
+
+    # Fixed position size when we have a signal
+    TARGET_SIZE = 100
 
     def run(self, state: TradingState):
         result = defaultdict(list)
@@ -72,28 +78,30 @@ class Trader:
         mid = (best_bid + best_ask) / 2.0
 
         pos = state.position.get(product, 0)
-        target = pos
 
         mid_hist = shared.get("hydro_mid_hist", [])
-        if len(mid_hist) >= self.HYDRO_LOOKBACK:
-            window = mid_hist[-self.HYDRO_LOOKBACK:]
-            mean = sum(window) / len(window)
-            variance = sum((x - mean) ** 2 for x in window) / len(window)
-            std = variance ** 0.5
-            z = 0.0 if std == 0 else (mid - mean) / std
+        mid_hist.append(mid)
 
-            # Mean reversion: sell statistically high prices, buy statistically low prices.
-            if z >= self.HYDRO_ENTRY_Z:
-                target = self.HYDRO_TARGET
-            elif z <= -self.HYDRO_ENTRY_Z:
-                target = -self.HYDRO_TARGET
+        target = pos  # default: hold current position
+
+        if len(mid_hist) >= self.GRADIENT_WINDOW:
+            # Gradient = change over the last GRADIENT_WINDOW ticks (price per tick)
+            gradient = (mid_hist[-1] - mid_hist[-self.GRADIENT_WINDOW]) / self.GRADIENT_WINDOW
+
+            if gradient < -self.GRADIENT_THRESHOLD:
+                # Price has been falling → reversal expected upward → go long
+                target = self.TARGET_SIZE
+            elif gradient > self.GRADIENT_THRESHOLD:
+                # Price has been rising → reversal expected downward → go short
+                target = -self.TARGET_SIZE
+            # else: gradient too flat, do nothing
 
         target = max(-self.HYDRO_POS_LIMIT, min(self.HYDRO_POS_LIMIT, target))
 
         if target > pos:
             need = target - pos
             for ask in asks:
-                available = -order_depth.sell_orders[ask]
+                available = abs(order_depth.sell_orders[ask])
                 qty = min(need, available)
                 if qty > 0:
                     orders.append(Order(product, ask, qty))
@@ -111,6 +119,6 @@ class Trader:
                 if need <= 0:
                     break
 
-        mid_hist.append(mid)
-        shared["hydro_mid_hist"] = mid_hist[-self.HYDRO_LOOKBACK:]
+        # Keep history bounded to avoid traderData bloat
+        shared["hydro_mid_hist"] = mid_hist[-300:]
         return orders, shared

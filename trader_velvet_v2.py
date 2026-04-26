@@ -1,54 +1,30 @@
-"""
-trader_vev.py — Best VEV-only strategy
-=======================================
-VEV options: dynamic-qty spread-filtered mean reversion.
-  - Frozen anchor (ALPHA_SLOW=0.0): reference price never moves from first observed tick.
-  - Only trade when deviation >= MIN_DEV_FRAC * spread (filters unprofitable small-dev trades).
-  - qty proportional to deviation/spread ratio (sizes up on high-conviction signals).
-  - HYDROGEL_PACK and spot included (they don't hurt and HYDRO adds ~20k).
-
-Best VEV-only backtest: ~93,911 across all 3 round-3 days.
-Combined with HYDRO: ~111,556.
-"""
-
 import json
 from datamodel import Order, Symbol, TradingState
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional, Tuple
 
 
-# ── VEV Options parameters ─────────────────────────────────────────────────────
 OPT_LIMITS: Dict[str, int] = {
-    "VEV_4000": 300, "VEV_4500": 300, "VEV_5000": 300,
-    "VEV_5100": 300, "VEV_5200": 300, "VEV_5300": 300,
-    "VEV_5400": 300, "VEV_5500": 300,
+    "VEV_4000": 300,
+    "VEV_4500": 300,
+    "VEV_5000": 300,
+    "VEV_5100": 300,
+    "VEV_5200": 300,
+    "VEV_5300": 300,
+    "VEV_5400": 300,
+    "VEV_5500": 300,
 }
-ALPHA_FAST    = 0.97
-ALPHA_SLOW    = 0.0       # frozen anchor — reference price fixed at first tick
-EXT_ALPHA     = 0.01
-EXT_THR       = 10.0
-STOP_LOSS     = -10000
 
-MIN_DEV_FRAC  = 0.9       # deviation must be >= 0.9 × spread to trade
-QTY_DIV_SCALE = 0.4       # qty = int(dev / (spread × 0.4))
-MAX_QTY       = 8         # cap per signal
+ALPHA_FAST = 0.97
+ALPHA_SLOW = 0.0
+EXT_ALPHA = 0.01
+EXT_THR = 10.0
+STOP_LOSS = -10000
 
-# ── HYDROGEL_PACK parameters ───────────────────────────────────────────────────
-HYDRO_POS_LIM    = 200
-HYDRO_STEP_SIZE  = 20
-HYDRO_MAX_SPREAD = 20
-
-HYDRO_BUY_TIERS = [
-    (9925, 70),
-    (9930, 60),
-    (9935, 50),
-    (9940, 40),
-]
-HYDRO_SELL_TIERS = [
-    (10040, 70),
-    (10035, 60),
-    (10030, 50),
-    (10025, 40),
-]
+MIN_DEV_FRAC = 0.9
+QTY_DIV_SCALE = 0.4
+MAX_QTY = 8
+BASE_SOFT_LIMIT = 20
+SOFT_LIMIT_TICK_DIVISOR = 10
 
 
 class Logger:
@@ -61,7 +37,8 @@ class Logger:
     def flush(self, state: TradingState, orders: dict, conversions: int, trader_data: str):
         print(json.dumps([
             [
-                state.timestamp, state.traderData,
+                state.timestamp,
+                state.traderData,
                 [[l.symbol, l.product, l.denomination] for l in state.listings.values()],
                 {s: [od.buy_orders, od.sell_orders] for s, od in state.order_depths.items()},
                 [[t.symbol, t.price, t.quantity, t.buyer, t.seller, t.timestamp]
@@ -76,7 +53,9 @@ class Logger:
                 }],
             ],
             [[o.symbol, o.price, o.quantity] for arr in orders.values() for o in arr],
-            conversions, trader_data, self.logs,
+            conversions,
+            trader_data,
+            self.logs,
         ], separators=(",", ":")))
         self.logs = ""
 
@@ -98,16 +77,14 @@ class Trader:
 
         result: Dict[Symbol, List[Order]] = {}
 
-        # ── Spot mid (for extrinsic value calc only — no spot orders) ──────────
         spot_depth = state.order_depths.get("VELVETFRUIT_EXTRACT")
         spot_mid: Optional[float] = None
         if spot_depth and spot_depth.buy_orders and spot_depth.sell_orders:
             spot_mid = (max(spot_depth.buy_orders) + min(spot_depth.sell_orders)) / 2.0
 
-        # ── Options: dynamic-qty spread-filtered mean reversion ───────────────
         ema_fast: Dict[str, float] = saved.get("f", {})
         ema_slow: Dict[str, float] = saved.get("s", {})
-        ext_ema:  Dict[str, float] = saved.get("e", {})
+        ext_ema: Dict[str, float] = saved.get("e", {})
 
         for product, limit in OPT_LIMITS.items():
             depth = state.order_depths.get(product)
@@ -116,7 +93,10 @@ class Trader:
 
             best_ask = min(depth.sell_orders)
             best_bid = max(depth.buy_orders)
-            spread    = best_ask - best_bid
+            spread = best_ask - best_bid
+            if spread <= 0:
+                continue
+
             mid_price = (best_ask + best_bid) / 2.0
 
             if product not in ema_fast:
@@ -127,12 +107,12 @@ class Trader:
                 ema_slow[product] = ALPHA_SLOW * mid_price + (1 - ALPHA_SLOW) * ema_slow[product]
 
             expected_price = ema_slow[product]
-            momentum       = mid_price - ema_fast[product]
+            momentum = mid_price - ema_fast[product]
 
             extrinsic = mid_price
-            ev_mavg   = 0.0
+            ev_mavg = 0.0
             if spot_mid is not None:
-                strike    = int(product.split("_")[1])
+                strike = int(product.split("_")[1])
                 intrinsic = max(0.0, spot_mid - strike)
                 extrinsic = mid_price - intrinsic
                 prev = ext_ema.get(product)
@@ -140,15 +120,16 @@ class Trader:
                 ev_mavg = ext_ema[product]
 
             current_pos = state.position.get(product, 0)
-            to_buy  = limit - current_pos
-            to_sell = limit + current_pos
+            observed_ticks = max(1, state.timestamp // 100 + 1)
+            soft_limit = min(limit, BASE_SOFT_LIMIT + observed_ticks // SOFT_LIMIT_TICK_DIVISOR)
+            to_buy = soft_limit - current_pos
+            to_sell = soft_limit + current_pos
 
             orders: List[Order] = []
 
-            # Stop-loss
             own_trades = state.own_trades.get(product, [])
             if own_trades:
-                mid_pnl  = (best_bid + best_ask) / 2.0
+                mid_pnl = (best_bid + best_ask) / 2.0
                 realized = sum((t.price - mid_pnl) * t.quantity for t in own_trades)
                 if realized < STOP_LOSS:
                     if current_pos > 0:
@@ -159,13 +140,12 @@ class Trader:
                         result[product] = orders
                     continue
 
-            # Signal: only trade when deviation >= MIN_DEV_FRAC * spread
-            min_dev  = spread * MIN_DEV_FRAC
-            buy_dev  = expected_price - best_ask   # positive = ask is below fair value
-            sell_dev = best_bid - expected_price    # positive = bid is above fair value
+            min_dev = spread * MIN_DEV_FRAC
+            buy_dev = expected_price - best_ask
+            sell_dev = best_bid - expected_price
 
-            take_buy  = (buy_dev  >= min_dev or momentum < -8) and to_buy  > 0
-            take_sell = (sell_dev >= min_dev or momentum >  8) and to_sell > 0
+            take_buy = (buy_dev >= min_dev or momentum < -8) and to_buy > 0
+            take_sell = (sell_dev >= min_dev or momentum > 8) and to_sell > 0
 
             if ev_mavg > 0:
                 if extrinsic > ev_mavg + EXT_THR:
@@ -194,52 +174,6 @@ class Trader:
         saved["s"] = {k: round(v, 2) for k, v in ema_slow.items()}
         saved["e"] = {k: round(v, 2) for k, v in ext_ema.items()}
 
-        # ── HYDROGEL_PACK: tier-based range strategy ──────────────────────────
-        hydro_orders = self._hydro_range(state)
-        if hydro_orders:
-            result["HYDROGEL_PACK"] = hydro_orders
-
         trader_data = json.dumps(saved)
         logger.flush(state, result, 0, trader_data)
         return result, 0, trader_data
-
-    def _hydro_range(self, state: TradingState) -> List[Order]:
-        product = "HYDROGEL_PACK"
-        od = state.order_depths.get(product)
-        if od is None or not od.buy_orders or not od.sell_orders:
-            return []
-
-        best_bid = max(od.buy_orders)
-        best_ask = min(od.sell_orders)
-        spread   = best_ask - best_bid
-        if spread > HYDRO_MAX_SPREAD or spread <= 0:
-            return []
-
-        mid = (best_bid + best_ask) / 2.0
-        pos = state.position.get(product, 0)
-
-        if mid < 9820 and pos > 0:
-            return [Order(product, int(best_bid), -pos)]
-        if mid > 10100 and pos < 0:
-            return [Order(product, int(best_ask), -pos)]
-
-        buy_room  = HYDRO_POS_LIM - pos
-        sell_room = HYDRO_POS_LIM + pos
-        orders: List[Order] = []
-
-        for threshold, target in HYDRO_BUY_TIERS:
-            if mid < threshold:
-                qty = min(HYDRO_STEP_SIZE, target - pos, buy_room)
-                if qty > 0:
-                    orders.append(Order(product, int(best_ask), qty))
-                break
-
-        if not orders:
-            for threshold, target in HYDRO_SELL_TIERS:
-                if mid > threshold:
-                    qty = min(HYDRO_STEP_SIZE, pos + target, sell_room)
-                    if qty > 0:
-                        orders.append(Order(product, int(best_bid), -qty))
-                    break
-
-        return orders

@@ -34,7 +34,7 @@ from io import StringIO
 from pathlib import Path
 from datetime import datetime
 
-TRADER_FILE   = Path(__file__).parent / 'trader_hydro_test_fill.py'
+TRADER_FILE   = Path(__file__).parent / 'trader_diagnostic.py'
 DATA_DIR      = Path(__file__).parent / 'data_bt'
 BACKTESTS_DIR = Path(__file__).parent / 'backtests'
 BACKTESTS_DIR.mkdir(exist_ok=True)
@@ -47,12 +47,15 @@ BACKTESTS_DIR.mkdir(exist_ok=True)
 # Each value is a list of candidates to try.
 
 SWEEP_PARAMS = {
-    # ── HYDROGEL_PACK z-score mean-reversion sweep ────────────────────────────
-    'LOOKBACK': [400, 500, 600, 700],
-    'ENTRY':    [1.75, 2.0, 2.25, 2.5, 2.75, 3.0],
-    'TARGET':   [25, 50, 75, 100, 150, 200],
+    # ── trader_diagnostic dual-EMA trend-filtered reversion sweep ─────────────
+    'HYDRO_LOOKBACK':        [100, 150, 200, 300, 400],
+    'HYDRO_DROP_THRESH':     [20, 25, 30, 35, 40, 50],
+    'HYDRO_RISE_THRESH':     [20, 25, 30, 35, 40, 50],
+    'HYDRO_EXIT_PROFIT':     [10, 15, 20, 25],
+    'HYDRO_EMA_FAST_ALPHA':  [0.01, 0.02, 0.05],
+    'HYDRO_EMA_SLOW_ALPHA':  [0.002, 0.005, 0.01],
+    'HYDRO_SWEEP_QTY':       [30, 50, 80],
 }
-
 # Parameters fixed at a specific value (excluded from sweep):
 FIXED_PARAMS: dict = {}
 
