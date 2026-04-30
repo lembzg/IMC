@@ -1,0 +1,557 @@
+[
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 500,
+      "entry": 2.5,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": 3231,
+      "4-2": 453,
+      "4-3": 641
+    },
+    "total_pnl": 4325
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 16.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": 7191,
+      "4-2": -3214,
+      "4-3": -1043
+    },
+    "total_pnl": 2934
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 500,
+      "entry": 3.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": 3389,
+      "4-2": -1481,
+      "4-3": -174
+    },
+    "total_pnl": 1734
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 20.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -1465,
+      "4-2": 2822,
+      "4-3": -2807
+    },
+    "total_pnl": -1450
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 500,
+      "entry": 16.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": 2157,
+      "4-2": -860,
+      "4-3": -3620
+    },
+    "total_pnl": -2323
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 20.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -649,
+      "4-2": -3607,
+      "4-3": 698
+    },
+    "total_pnl": -3558
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 500,
+      "entry": 2.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -4252,
+      "4-2": -1285,
+      "4-3": -885
+    },
+    "total_pnl": -6422
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 500,
+      "entry": 1.5,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -4208,
+      "4-2": -3635,
+      "4-3": -8895
+    },
+    "total_pnl": -16738
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 500,
+      "entry": 1.25,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -4739,
+      "4-2": -6784,
+      "4-3": -8203
+    },
+    "total_pnl": -19726
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 500,
+      "entry": 12.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -7340,
+      "4-2": -8557,
+      "4-3": -8652
+    },
+    "total_pnl": -24549
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 12.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -9712,
+      "4-2": -6415,
+      "4-3": -10004
+    },
+    "total_pnl": -26131
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 16.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -19229,
+      "4-2": -9848,
+      "4-3": -11310
+    },
+    "total_pnl": -40387
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 500,
+      "entry": 8.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -21070,
+      "4-2": -18653,
+      "4-3": -22578
+    },
+    "total_pnl": -62301
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 12.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -23675,
+      "4-2": -29743,
+      "4-3": -30228
+    },
+    "total_pnl": -83646
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 8.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -39998,
+      "4-2": -39610,
+      "4-3": -35486
+    },
+    "total_pnl": -115094
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 8.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -53187,
+      "4-2": -48092,
+      "4-3": -57383
+    },
+    "total_pnl": -158662
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 8.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -56199,
+      "4-2": -57350,
+      "4-3": -56885
+    },
+    "total_pnl": -170434
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 8.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -57653,
+      "4-2": -82662,
+      "4-3": -60551
+    },
+    "total_pnl": -200866
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 100,
+      "entry": 1.5,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -70177,
+      "4-2": -77096,
+      "4-3": -66953
+    },
+    "total_pnl": -214226
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 2.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -81119,
+      "4-2": -71171,
+      "4-3": -74453
+    },
+    "total_pnl": -226743
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 100,
+      "entry": 5.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -76809,
+      "4-2": -82469,
+      "4-3": -79449
+    },
+    "total_pnl": -238727
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 4.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -84795,
+      "4-2": -78269,
+      "4-3": -83118
+    },
+    "total_pnl": -246182
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 2.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -75059,
+      "4-2": -95285,
+      "4-3": -79513
+    },
+    "total_pnl": -249857
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 100,
+      "entry": 1.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -91299,
+      "4-2": -100229,
+      "4-3": -82965
+    },
+    "total_pnl": -274493
+  },
+  {
+    "params": {
+      "mode": "momentum",
+      "lookback": 50,
+      "entry": 4.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -90327,
+      "4-2": -94045,
+      "4-3": -91150
+    },
+    "total_pnl": -275522
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 100,
+      "entry": 5.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -85241,
+      "4-2": -114589,
+      "4-3": -93934
+    },
+    "total_pnl": -293764
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 1.5,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -107725,
+      "4-2": -101599,
+      "4-3": -103540
+    },
+    "total_pnl": -312864
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 5.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -100667,
+      "4-2": -107474,
+      "4-3": -109809
+    },
+    "total_pnl": -317950
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 100,
+      "entry": 0.75,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -101174,
+      "4-2": -130258,
+      "4-3": -98647
+    },
+    "total_pnl": -330079
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 1.5,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -102437,
+      "4-2": -130125,
+      "4-3": -108350
+    },
+    "total_pnl": -340912
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 5.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -99953,
+      "4-2": -137695,
+      "4-3": -110146
+    },
+    "total_pnl": -347794
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 1.25,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -121289,
+      "4-2": -118973,
+      "4-3": -122175
+    },
+    "total_pnl": -362437
+  },
+  {
+    "params": {
+      "mode": "mid_z",
+      "lookback": 50,
+      "entry": 1.25,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -119949,
+      "4-2": -149277,
+      "4-3": -125481
+    },
+    "total_pnl": -394707
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 100,
+      "entry": 2.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -163579,
+      "4-2": -176036,
+      "4-3": -168200
+    },
+    "total_pnl": -507815
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 100,
+      "entry": 2.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -172727,
+      "4-2": -203064,
+      "4-3": -178516
+    },
+    "total_pnl": -554307
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 2.0,
+      "direction": -1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -216183,
+      "4-2": -220712,
+      "4-3": -229184
+    },
+    "total_pnl": -666079
+  },
+  {
+    "params": {
+      "mode": "ema",
+      "lookback": 50,
+      "entry": 2.0,
+      "direction": 1,
+      "target": 200
+    },
+    "day_pnl": {
+      "4-1": -213513,
+      "4-2": -234062,
+      "4-3": -229338
+    },
+    "total_pnl": -676913
+  }
+]

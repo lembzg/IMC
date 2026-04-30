@@ -1,0 +1,2138 @@
+{
+  "train_days": [
+    "4-1",
+    "4-2"
+  ],
+  "test_days": [
+    "4-3"
+  ],
+  "top_tested": [
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32695,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 8,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 8,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 8,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 8,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 10,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 10,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 10,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 10,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 14,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 14,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 14,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 14,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 20,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 20,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 20,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 20,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 30,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 30,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 30,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "skewed",
+          "mid_main_qty": 30,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32695,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 1,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 1,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32695,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 1,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 1,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 2,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 2,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32695,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 2,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 4,
+          "mid_small_qty": 2,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 0,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 1,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 1,
+          "mid_improve": 2,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 1,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 1,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 2,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-1",
+          "4-2"
+        ],
+        "total": 58005,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "mid_entry_z": 0.6,
+          "mid_mode": "one_sided",
+          "mid_main_qty": 6,
+          "mid_small_qty": 2,
+          "mid_improve": 1,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "days": [
+          "4-3"
+        ],
+        "total": 32691,
+        "error": null
+      }
+    }
+  ],
+  "top_train": [
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 4,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 4,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 6,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 6,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 8,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 8,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 10,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 10,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 14,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 14,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 20,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 20,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 30,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "skewed",
+        "mid_main_qty": 30,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 1,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 1,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 2,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 4,
+        "mid_small_qty": 2,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 1,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 1,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 2,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 2,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 4,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 6,
+        "mid_small_qty": 4,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 1,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 2,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 1,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 2,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 4,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 4,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 6,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 8,
+        "mid_small_qty": 6,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 1,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 1,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 2,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 2,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 4,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 4,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 6,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 10,
+        "mid_small_qty": 6,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 14,
+        "mid_small_qty": 0,
+        "mid_improve": 1,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "mid_entry_z": 0.6,
+        "mid_mode": "one_sided",
+        "mid_main_qty": 14,
+        "mid_small_qty": 0,
+        "mid_improve": 2,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "days": [
+        "4-1",
+        "4-2"
+      ],
+      "total": 58005,
+      "error": null
+    }
+  ]
+}

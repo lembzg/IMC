@@ -34,6 +34,31 @@ Router in `_trade_product()` maps product names to strategies. Add new products 
 2. Adding to PARAMS dict  
 3. Adding strategy mapping in `_trade_product()`
 
+## Backtest Command (Round 5)
+```bash
+prosperity4btest trader.py 5-2 5-3 5-4 --data data --no-out \
+  --limit GALAXY_SOUNDS_DARK_MATTER:10 --limit GALAXY_SOUNDS_BLACK_HOLES:10 \
+  --limit GALAXY_SOUNDS_PLANETARY_RINGS:10 --limit GALAXY_SOUNDS_SOLAR_WINDS:10 \
+  --limit GALAXY_SOUNDS_SOLAR_FLAMES:10 --limit SLEEP_POD_SUEDE:10 \
+  --limit SLEEP_POD_LAMB_WOOL:10 --limit SLEEP_POD_POLYESTER:10 \
+  --limit SLEEP_POD_NYLON:10 --limit SLEEP_POD_COTTON:10 \
+  --limit MICROCHIP_CIRCLE:10 --limit MICROCHIP_OVAL:10 \
+  --limit MICROCHIP_SQUARE:10 --limit MICROCHIP_RECTANGLE:10 \
+  --limit MICROCHIP_TRIANGLE:10 --limit PEBBLES_XS:10 --limit PEBBLES_S:10 \
+  --limit PEBBLES_M:10 --limit PEBBLES_L:10 --limit PEBBLES_XL:10 \
+  --limit ROBOT_VACUUMING:10 --limit ROBOT_MOPPING:10 --limit ROBOT_DISHES:10 \
+  --limit ROBOT_LAUNDRY:10 --limit ROBOT_IRONING:10 --limit UV_VISOR_YELLOW:10 \
+  --limit UV_VISOR_AMBER:10 --limit UV_VISOR_ORANGE:10 --limit UV_VISOR_RED:10 \
+  --limit UV_VISOR_MAGENTA:10 --limit TRANSLATOR_SPACE_GRAY:10 \
+  --limit TRANSLATOR_ASTRO_BLACK:10 --limit TRANSLATOR_ECLIPSE_CHARCOAL:10 \
+  --limit TRANSLATOR_GRAPHITE_MIST:10 --limit TRANSLATOR_VOID_BLUE:10 \
+  --limit PANEL_1X2:10 --limit PANEL_2X2:10 --limit PANEL_1X4:10 \
+  --limit PANEL_2X4:10 --limit PANEL_4X4:10 \
+  --limit OXYGEN_SHAKE_MORNING_BREATH:10 --limit OXYGEN_SHAKE_EVENING_BREATH:10 \
+  --limit OXYGEN_SHAKE_MINT:10 --limit OXYGEN_SHAKE_CHOCOLATE:10
+```
+Current Round 5 PnL baseline: ~922,962
+
 ## Common Bugs to Avoid
 - Forgetting sell_orders are negative → use `abs(sell_orders[price])`
 - Not checking position before ordering → ALL orders get rejected

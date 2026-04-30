@@ -1,0 +1,1612 @@
+{
+  "days": [
+    "3-0",
+    "3-1",
+    "3-2",
+    "4-1",
+    "4-2",
+    "4-3"
+  ],
+  "top": [
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 69508,
+      "days": {
+        "3-0": 3816,
+        "3-1": 11658,
+        "3-2": 17814,
+        "4-1": 11658,
+        "4-2": 17814,
+        "4-3": 6748
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 40647,
+      "days": {
+        "3-0": 7736,
+        "3-1": 1300,
+        "3-2": 10755,
+        "4-1": 1300,
+        "4-2": 10755,
+        "4-3": 8801
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": 30303,
+      "days": {
+        "3-0": 4784,
+        "3-1": -1872,
+        "3-2": 8853,
+        "4-1": -1872,
+        "4-2": 8853,
+        "4-3": 11557
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 59311,
+      "days": {
+        "3-0": -1966,
+        "3-1": 12322,
+        "3-2": 11394,
+        "4-1": 12322,
+        "4-2": 11394,
+        "4-3": 13845
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -5770,
+      "days": {
+        "3-0": -3354,
+        "3-1": -1816,
+        "3-2": -1681,
+        "4-1": -1816,
+        "4-2": -1681,
+        "4-3": 4578
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -1018,
+      "days": {
+        "3-0": -846,
+        "3-1": -3978,
+        "3-2": 5889,
+        "4-1": -3978,
+        "4-2": 5889,
+        "4-3": -3994
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 22867,
+      "days": {
+        "3-0": 27465,
+        "3-1": -4107,
+        "3-2": -2378,
+        "4-1": -4107,
+        "4-2": -2378,
+        "4-3": 8372
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -6942,
+      "days": {
+        "3-0": -4887,
+        "3-1": -3800,
+        "3-2": 2041,
+        "4-1": -3800,
+        "4-2": 2041,
+        "4-3": 1463
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": 8499,
+      "days": {
+        "3-0": -664,
+        "3-1": -4932,
+        "3-2": 699,
+        "4-1": -4932,
+        "4-2": 699,
+        "4-3": 17629
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -13574,
+      "days": {
+        "3-0": -6306,
+        "3-1": -4988,
+        "3-2": -2326,
+        "4-1": -4988,
+        "4-2": -2326,
+        "4-3": 7360
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 38675,
+      "days": {
+        "3-0": 12321,
+        "3-1": -6588,
+        "3-2": 15211,
+        "4-1": -6588,
+        "4-2": 15211,
+        "4-3": 9108
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 24861,
+      "days": {
+        "3-0": -7274,
+        "3-1": 8542,
+        "3-2": 6250,
+        "4-1": 8542,
+        "4-2": 6250,
+        "4-3": 2551
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -2944,
+      "days": {
+        "3-0": 18299,
+        "3-1": -3783,
+        "3-2": -8918,
+        "4-1": -3783,
+        "4-2": -8918,
+        "4-3": 4159
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -1466,
+      "days": {
+        "3-0": 1865,
+        "3-1": -8995,
+        "3-2": 4862,
+        "4-1": -8995,
+        "4-2": 4862,
+        "4-3": 4935
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -16143,
+      "days": {
+        "3-0": -9098,
+        "3-1": -5174,
+        "3-2": -4418,
+        "4-1": -5174,
+        "4-2": -4418,
+        "4-3": 12139
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -30915,
+      "days": {
+        "3-0": -5476,
+        "3-1": -10177,
+        "3-2": -1051,
+        "4-1": -10177,
+        "4-2": -1051,
+        "4-3": -2983
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -27390,
+      "days": {
+        "3-0": -2206,
+        "3-1": -10393,
+        "3-2": 1624,
+        "4-1": -10393,
+        "4-2": 1624,
+        "4-3": -7646
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -28442,
+      "days": {
+        "3-0": 6752,
+        "3-1": -7509,
+        "3-2": -10515,
+        "4-1": -7509,
+        "4-2": -10515,
+        "4-3": 854
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 3581,
+      "days": {
+        "3-0": -10664,
+        "3-1": -2894,
+        "3-2": -660,
+        "4-1": -2894,
+        "4-2": -660,
+        "4-3": 21353
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -21066,
+      "days": {
+        "3-0": 2104,
+        "3-1": -11088,
+        "3-2": 1082,
+        "4-1": -11088,
+        "4-2": 1082,
+        "4-3": -3158
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 7031,
+      "days": {
+        "3-0": -11890,
+        "3-1": -1920,
+        "3-2": 5132,
+        "4-1": -1920,
+        "4-2": 5132,
+        "4-3": 12497
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -11135,
+      "days": {
+        "3-0": 154,
+        "3-1": -12001,
+        "3-2": -3713,
+        "4-1": -12001,
+        "4-2": -3713,
+        "4-3": 20139
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -12954,
+      "days": {
+        "3-0": 8888,
+        "3-1": -12287,
+        "3-2": -9540,
+        "4-1": -12287,
+        "4-2": -9540,
+        "4-3": 21812
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -35200,
+      "days": {
+        "3-0": -7952,
+        "3-1": -12434,
+        "3-2": -8868,
+        "4-1": -12434,
+        "4-2": -8868,
+        "4-3": 15356
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 12216,
+      "days": {
+        "3-0": -13056,
+        "3-1": 9176,
+        "3-2": -1364,
+        "4-1": 9176,
+        "4-2": -1364,
+        "4-3": 9648
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -11067,
+      "days": {
+        "3-0": 29551,
+        "3-1": -8997,
+        "3-2": -4719,
+        "4-1": -8997,
+        "4-2": -4719,
+        "4-3": -13186
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -28501,
+      "days": {
+        "3-0": 363,
+        "3-1": -13771,
+        "3-2": -245,
+        "4-1": -13771,
+        "4-2": -245,
+        "4-3": -832
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -18995,
+      "days": {
+        "3-0": 7852,
+        "3-1": -5240,
+        "3-2": -14647,
+        "4-1": -5240,
+        "4-2": -14647,
+        "4-3": 12927
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -37970,
+      "days": {
+        "3-0": 73,
+        "3-1": -12498,
+        "3-2": -14695,
+        "4-1": -12498,
+        "4-2": -14695,
+        "4-3": 16343
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -49680,
+      "days": {
+        "3-0": 6020,
+        "3-1": -13713,
+        "3-2": -14968,
+        "4-1": -13713,
+        "4-2": -14968,
+        "4-3": 1662
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": 26889,
+      "days": {
+        "3-0": 14383,
+        "3-1": -15364,
+        "3-2": 16667,
+        "4-1": -15364,
+        "4-2": 16667,
+        "4-3": 9900
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 21447,
+      "days": {
+        "3-0": 57603,
+        "3-1": -15753,
+        "3-2": 5439,
+        "4-1": -15753,
+        "4-2": 5439,
+        "4-3": -15528
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -43518,
+      "days": {
+        "3-0": 749,
+        "3-1": -5939,
+        "3-2": -15786,
+        "4-1": -5939,
+        "4-2": -15786,
+        "4-3": -817
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -67292,
+      "days": {
+        "3-0": -15798,
+        "3-1": -10903,
+        "3-2": -9408,
+        "4-1": -10903,
+        "4-2": -9408,
+        "4-3": -10872
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -42572,
+      "days": {
+        "3-0": 244,
+        "3-1": -15932,
+        "3-2": -1834,
+        "4-1": -15932,
+        "4-2": -1834,
+        "4-3": -7284
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -22163,
+      "days": {
+        "3-0": 5933,
+        "3-1": -16084,
+        "3-2": 3334,
+        "4-1": -16084,
+        "4-2": 3334,
+        "4-3": -2596
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -61362,
+      "days": {
+        "3-0": -5602,
+        "3-1": -13455,
+        "3-2": -16109,
+        "4-1": -13455,
+        "4-2": -16109,
+        "4-3": 3368
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -42842,
+      "days": {
+        "3-0": 6509,
+        "3-1": -9818,
+        "3-2": -16304,
+        "4-1": -9818,
+        "4-2": -16304,
+        "4-3": 2893
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -22708,
+      "days": {
+        "3-0": 14699,
+        "3-1": -16429,
+        "3-2": -5182,
+        "4-1": -16429,
+        "4-2": -5182,
+        "4-3": 5815
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -53693,
+      "days": {
+        "3-0": 8685,
+        "3-1": -15929,
+        "3-2": -17208,
+        "4-1": -15929,
+        "4-2": -17208,
+        "4-3": 3896
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -87200,
+      "days": {
+        "3-0": -12848,
+        "3-1": -17705,
+        "3-2": -14453,
+        "4-1": -17705,
+        "4-2": -14453,
+        "4-3": -10036
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -10952,
+      "days": {
+        "3-0": 4574,
+        "3-1": -17771,
+        "3-2": 6799,
+        "4-1": -17771,
+        "4-2": 6799,
+        "4-3": 6418
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -48800,
+      "days": {
+        "3-0": -1306,
+        "3-1": -18107,
+        "3-2": -3090,
+        "4-1": -18107,
+        "4-2": -3090,
+        "4-3": -5100
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -99918,
+      "days": {
+        "3-0": -18472,
+        "3-1": -18339,
+        "3-2": -14767,
+        "4-1": -18339,
+        "4-2": -14767,
+        "4-3": -15234
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 50,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -64221,
+      "days": {
+        "3-0": -6066,
+        "3-1": -19043,
+        "3-2": -5253,
+        "4-1": -19043,
+        "4-2": -5253,
+        "4-3": -9563
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -35427,
+      "days": {
+        "3-0": 25892,
+        "3-1": -11993,
+        "3-2": -9132,
+        "4-1": -11993,
+        "4-2": -9132,
+        "4-3": -19069
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -19828,
+      "days": {
+        "3-0": -19227,
+        "3-1": -3096,
+        "3-2": -5815,
+        "4-1": -3096,
+        "4-2": -5815,
+        "4-3": 17221
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 50,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -64945,
+      "days": {
+        "3-0": -4207,
+        "3-1": -19606,
+        "3-2": -4293,
+        "4-1": -19606,
+        "4-2": -4293,
+        "4-3": -12940
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -81184,
+      "days": {
+        "3-0": -16912,
+        "3-1": -19687,
+        "3-2": -11673,
+        "4-1": -19687,
+        "4-2": -11673,
+        "4-3": -1552
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -82696,
+      "days": {
+        "3-0": -17582,
+        "3-1": -19735,
+        "3-2": -8656,
+        "4-1": -19735,
+        "4-2": -8656,
+        "4-3": -8332
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -43809,
+      "days": {
+        "3-0": 3434,
+        "3-1": -19806,
+        "3-2": -452,
+        "4-1": -19806,
+        "4-2": -452,
+        "4-3": -6727
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -73358,
+      "days": {
+        "3-0": -19839,
+        "3-1": -10725,
+        "3-2": -13327,
+        "4-1": -10725,
+        "4-2": -13327,
+        "4-3": -5415
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -39176,
+      "days": {
+        "3-0": -1575,
+        "3-1": -3399,
+        "3-2": -19885,
+        "4-1": -3399,
+        "4-2": -19885,
+        "4-3": 8967
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -14767,
+      "days": {
+        "3-0": -19922,
+        "3-1": -1402,
+        "3-2": -159,
+        "4-1": -1402,
+        "4-2": -159,
+        "4-3": 8277
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -53371,
+      "days": {
+        "3-0": 19945,
+        "3-1": -19944,
+        "3-2": -9236,
+        "4-1": -19944,
+        "4-2": -9236,
+        "4-3": -14956
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -89631,
+      "days": {
+        "3-0": -3317,
+        "3-1": -19772,
+        "3-2": -20189,
+        "4-1": -19772,
+        "4-2": -20189,
+        "4-3": -6392
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": 16030,
+      "days": {
+        "3-0": 12661,
+        "3-1": -20211,
+        "3-2": 14679,
+        "4-1": -20211,
+        "4-2": 14679,
+        "4-3": 14433
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -100541,
+      "days": {
+        "3-0": -18489,
+        "3-1": -20261,
+        "3-2": -18652,
+        "4-1": -20261,
+        "4-2": -18652,
+        "4-3": -4226
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -66417,
+      "days": {
+        "3-0": 8843,
+        "3-1": -20478,
+        "3-2": -11841,
+        "4-1": -20478,
+        "4-2": -11841,
+        "4-3": -10622
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -76034,
+      "days": {
+        "3-0": -10199,
+        "3-1": -20488,
+        "3-2": -10239,
+        "4-1": -20488,
+        "4-2": -10239,
+        "4-3": -4381
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -94453,
+      "days": {
+        "3-0": -14589,
+        "3-1": -20594,
+        "3-2": -15483,
+        "4-1": -20594,
+        "4-2": -15483,
+        "4-3": -7710
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 16387,
+      "days": {
+        "3-0": 40806,
+        "3-1": -20695,
+        "3-2": 6802,
+        "4-1": -20695,
+        "4-2": 6802,
+        "4-3": 3367
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -71188,
+      "days": {
+        "3-0": -653,
+        "3-1": -13171,
+        "3-2": -21463,
+        "4-1": -13171,
+        "4-2": -21463,
+        "4-3": -1267
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": 20518,
+      "days": {
+        "3-0": 9042,
+        "3-1": -21584,
+        "3-2": 20952,
+        "4-1": -21584,
+        "4-2": 20952,
+        "4-3": 12740
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 26220,
+      "days": {
+        "3-0": 17952,
+        "3-1": -21655,
+        "3-2": 26052,
+        "4-1": -21655,
+        "4-2": 26052,
+        "4-3": -526
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 80,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -104603,
+      "days": {
+        "3-0": -21742,
+        "3-1": -18123,
+        "3-2": -18022,
+        "4-1": -18123,
+        "4-2": -18022,
+        "4-3": -10571
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -83026,
+      "days": {
+        "3-0": -8520,
+        "3-1": -21992,
+        "3-2": -10524,
+        "4-1": -21992,
+        "4-2": -10524,
+        "4-3": -9474
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.0,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -13836,
+      "days": {
+        "3-0": 6767,
+        "3-1": -22289,
+        "3-2": 8894,
+        "4-1": -22289,
+        "4-2": 8894,
+        "4-3": 6187
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -26982,
+      "days": {
+        "3-0": 7448,
+        "3-1": -22338,
+        "3-2": 5957,
+        "4-1": -22338,
+        "4-2": 5957,
+        "4-3": -1668
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -69588,
+      "days": {
+        "3-0": -22409,
+        "3-1": -9719,
+        "3-2": -10231,
+        "4-1": -9719,
+        "4-2": -10231,
+        "4-3": -7279
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -6144,
+      "days": {
+        "3-0": 53499,
+        "3-1": -18252,
+        "3-2": -346,
+        "4-1": -18252,
+        "4-2": -346,
+        "4-3": -22447
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -89993,
+      "days": {
+        "3-0": -10290,
+        "3-1": -18017,
+        "3-2": -22580,
+        "4-1": -18017,
+        "4-2": -22580,
+        "4-3": 1491
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -121388,
+      "days": {
+        "3-0": -14416,
+        "3-1": -22062,
+        "3-2": -22628,
+        "4-1": -22062,
+        "4-2": -22628,
+        "4-3": -17592
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 3.0,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -95744,
+      "days": {
+        "3-0": -3893,
+        "3-1": -22673,
+        "3-2": -15649,
+        "4-1": -22673,
+        "4-2": -15649,
+        "4-3": -15207
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.0,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": 17451,
+      "days": {
+        "3-0": 6952,
+        "3-1": -22723,
+        "3-2": 18984,
+        "4-1": -22723,
+        "4-2": 18984,
+        "4-3": 17977
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 700,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 100,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -113046,
+      "days": {
+        "3-0": -9321,
+        "3-1": -20942,
+        "3-2": -22901,
+        "4-1": -20942,
+        "4-2": -22901,
+        "4-3": -16039
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.4,
+        "full_z": 2.8,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 2
+      },
+      "total": -22175,
+      "days": {
+        "3-0": 34078,
+        "3-1": -23102,
+        "3-2": -5173,
+        "4-1": -23102,
+        "4-2": -5173,
+        "4-3": 297
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "full_z": 2.6,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": -107095,
+      "days": {
+        "3-0": -21441,
+        "3-1": -23247,
+        "3-2": -18683,
+        "4-1": -23247,
+        "4-2": -18683,
+        "4-3": -1794
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 900,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 150,
+        "full_target": 200,
+        "confirm_ticks": 3
+      },
+      "total": 14306,
+      "days": {
+        "3-0": 26693,
+        "3-1": -18858,
+        "3-2": 24293,
+        "4-1": -18858,
+        "4-2": 24293,
+        "4-3": -23257
+      },
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "full_z": 3.0,
+        "small_target": 50,
+        "full_target": 200,
+        "confirm_ticks": 1
+      },
+      "total": -73969,
+      "days": {
+        "3-0": -2364,
+        "3-1": -23260,
+        "3-2": -6004,
+        "4-1": -23260,
+        "4-2": -6004,
+        "4-3": -13077
+      },
+      "error": null
+    }
+  ]
+}

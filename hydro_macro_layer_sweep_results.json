@@ -1,0 +1,2013 @@
+{
+  "train_days": [
+    "4-1",
+    "4-2"
+  ],
+  "test_days": [
+    "4-3"
+  ],
+  "top_tested": [
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 58442,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 32817,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 58442,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 32817,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 58308,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 32699,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 58268,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 58268,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 32691,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 58151,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 32587,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 58001,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 32676,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 58001,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 32676,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 57934,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 32577,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 57857,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 32572,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 57857,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 32572,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 57822,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 32629,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 57822,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 32629,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 57804,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 32486,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 57737,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 32476,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 57691,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 32538,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 57691,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 32538,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 57624,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 32399,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 50696,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 9173,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 50682,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 9178,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 50682,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 9178,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 50644,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 8909,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 50644,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 8909,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 50634,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 8781,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 50634,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 8781,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 50611,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 1
+        },
+        "total": 8924,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 50573,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 1
+        },
+        "total": 8710,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 50455,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 9061,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 50413,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 9052,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 50413,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 9052,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 50397,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 8686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 50397,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 8686,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 50396,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 6,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 8803,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 50396,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 8,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 8803,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 50388,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 2,
+          "bot_improve": 2
+        },
+        "total": 8831,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 50365,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 600,
+          "entry_z": 3.0,
+          "target_size": 200,
+          "bot_main_qty": 4,
+          "bot_small_qty": 1,
+          "bot_improve": 2
+        },
+        "total": 8629,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 46300,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 24118,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 46300,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 8,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 24118,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 46172,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 4,
+          "bot_small_qty": 4,
+          "bot_improve": 1
+        },
+        "total": 24000,
+        "error": null
+      }
+    },
+    {
+      "train": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 46126,
+        "error": null
+      },
+      "test": {
+        "params": {
+          "rolling_window": 800,
+          "entry_z": 2.0,
+          "target_size": 150,
+          "bot_main_qty": 6,
+          "bot_small_qty": 4,
+          "bot_improve": 2
+        },
+        "total": 23992,
+        "error": null
+      }
+    }
+  ],
+  "top_train": [
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 58442,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 58442,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 58308,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 58268,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 58268,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 58151,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 58001,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 58001,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 57934,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 57857,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 57857,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 57822,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 57822,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 57804,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 57737,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 57691,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 57691,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 57624,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 50696,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 50682,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 50682,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 50644,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 50644,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 50634,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 50634,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 50611,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 50573,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 50455,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 50413,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 50413,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 50397,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 50397,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 50396,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 50396,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 50388,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 600,
+        "entry_z": 3.0,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 50365,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 46300,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 46300,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 46172,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 46126,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 46126,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 46015,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 45943,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 45943,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 45858,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 45799,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 45799,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 45792,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 45792,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 45728,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 45695,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 45661,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 45661,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.0,
+        "target_size": 150,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 45582,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 45222,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 45222,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 45089,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 44902,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 44902,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 2
+      },
+      "total": 44803,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 44746,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 44746,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 44697,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 44480,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 44480,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 44467,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 44460,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 44460,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 2
+      },
+      "total": 44442,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 44231,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 44209,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 800,
+        "entry_z": 2.2,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 2
+      },
+      "total": 44209,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 42832,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 42832,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 2,
+        "bot_improve": 1
+      },
+      "total": 42742,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 42740,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 1,
+        "bot_improve": 1
+      },
+      "total": 42740,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 6,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 42727,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 8,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 42727,
+      "error": null
+    },
+    {
+      "params": {
+        "rolling_window": 1000,
+        "entry_z": 1.8,
+        "target_size": 200,
+        "bot_main_qty": 4,
+        "bot_small_qty": 4,
+        "bot_improve": 1
+      },
+      "total": 42670,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,1682 @@
+[
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 139139,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 7694,
+      "4-1": 25470,
+      "4-2": 7694,
+      "4-3": 20260
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 139139,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 7694,
+      "4-1": 25470,
+      "4-2": 7694,
+      "4-3": 20260
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 139139,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 7694,
+      "4-1": 25470,
+      "4-2": 7694,
+      "4-3": 20260
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 139139,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 7694,
+      "4-1": 25470,
+      "4-2": 7694,
+      "4-3": 20260
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 2.8,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 3.2,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 200,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 138783,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 7744,
+      "4-1": 25313,
+      "4-2": 7744,
+      "4-3": 20110
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 15.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 124506,
+    "days": {
+      "3-0": 40081,
+      "3-1": 18362,
+      "3-2": 10630,
+      "4-1": 18362,
+      "4-2": 10630,
+      "4-3": 26441
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 20.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 124506,
+    "days": {
+      "3-0": 40081,
+      "3-1": 18362,
+      "3-2": 10630,
+      "4-1": 18362,
+      "4-2": 10630,
+      "4-3": 26441
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": false,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 124506,
+    "days": {
+      "3-0": 40081,
+      "3-1": 18362,
+      "3-2": 10630,
+      "4-1": 18362,
+      "4-2": 10630,
+      "4-3": 26441
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 40
+    },
+    "total": 104922,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 6760,
+      "4-1": 18420,
+      "4-2": 6760,
+      "4-3": 14529
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": false,
+      "max_take_per_tick": 80
+    },
+    "total": 104922,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 6760,
+      "4-1": 18420,
+      "4-2": 6760,
+      "4-3": 14529
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 80
+    },
+    "total": 104922,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 6760,
+      "4-1": 18420,
+      "4-2": 6760,
+      "4-3": 14529
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "full_z": 999.0,
+      "small_target": 150,
+      "exit_z": 0.0,
+      "use_trend": true,
+      "trend_skip": 30.0,
+      "use_chunk": true,
+      "max_take_per_tick": 40
+    },
+    "total": 104836,
+    "days": {
+      "3-0": 40081,
+      "3-1": 18362,
+      "3-2": 6729,
+      "4-1": 18362,
+      "4-2": 6729,
+      "4-3": 14573
+    },
+    "error": null
+  }
+]

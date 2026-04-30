@@ -1,0 +1,2602 @@
+[
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 171279,
+    "days": {
+      "3-0": 53489,
+      "3-1": 28026,
+      "3-2": 12875,
+      "4-1": 28026,
+      "4-2": 12875,
+      "4-3": 35988
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 2
+    },
+    "total": 171279,
+    "days": {
+      "3-0": 53489,
+      "3-1": 28026,
+      "3-2": 12875,
+      "4-1": 28026,
+      "4-2": 12875,
+      "4-3": 35988
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 3
+    },
+    "total": 171279,
+    "days": {
+      "3-0": 53489,
+      "3-1": 28026,
+      "3-2": 12875,
+      "4-1": 28026,
+      "4-2": 12875,
+      "4-3": 35988
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 167720,
+    "days": {
+      "3-0": 6616,
+      "3-1": 34823,
+      "3-2": 23304,
+      "4-1": 34823,
+      "4-2": 23304,
+      "4-3": 44850
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 2
+    },
+    "total": 167720,
+    "days": {
+      "3-0": 6616,
+      "3-1": 34823,
+      "3-2": 23304,
+      "4-1": 34823,
+      "4-2": 23304,
+      "4-3": 44850
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 3
+    },
+    "total": 167720,
+    "days": {
+      "3-0": 6616,
+      "3-1": 34823,
+      "3-2": 23304,
+      "4-1": 34823,
+      "4-2": 23304,
+      "4-3": 44850
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "both",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 165014,
+    "days": {
+      "3-0": 20080,
+      "3-1": 42589,
+      "3-2": 12546,
+      "4-1": 42589,
+      "4-2": 12546,
+      "4-3": 34664
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 163204,
+    "days": {
+      "3-0": 52243,
+      "3-1": 25053,
+      "3-2": 12527,
+      "4-1": 25053,
+      "4-2": 12527,
+      "4-3": 35801
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 156021,
+    "days": {
+      "3-0": 6248,
+      "3-1": 33691,
+      "3-2": 22786,
+      "4-1": 33691,
+      "4-2": 22786,
+      "4-3": 36819
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 2
+    },
+    "total": 156021,
+    "days": {
+      "3-0": 6248,
+      "3-1": 33691,
+      "3-2": 22786,
+      "4-1": 33691,
+      "4-2": 22786,
+      "4-3": 36819
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 3
+    },
+    "total": 156021,
+    "days": {
+      "3-0": 6248,
+      "3-1": 33691,
+      "3-2": 22786,
+      "4-1": 33691,
+      "4-2": 22786,
+      "4-3": 36819
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 153549,
+    "days": {
+      "3-0": 51888,
+      "3-1": 27627,
+      "3-2": 8365,
+      "4-1": 27627,
+      "4-2": 8365,
+      "4-3": 29677
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 2
+    },
+    "total": 153549,
+    "days": {
+      "3-0": 51888,
+      "3-1": 27627,
+      "3-2": 8365,
+      "4-1": 27627,
+      "4-2": 8365,
+      "4-3": 29677
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 3
+    },
+    "total": 153549,
+    "days": {
+      "3-0": 51888,
+      "3-1": 27627,
+      "3-2": 8365,
+      "4-1": 27627,
+      "4-2": 8365,
+      "4-3": 29677
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 152421,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 151904,
+    "days": {
+      "3-0": 3226,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 2
+    },
+    "total": 151904,
+    "days": {
+      "3-0": 3226,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 3
+    },
+    "total": 151904,
+    "days": {
+      "3-0": 3226,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 32676
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 150653,
+    "days": {
+      "3-0": 3349,
+      "3-1": 34967,
+      "3-2": 22463,
+      "4-1": 34967,
+      "4-2": 22463,
+      "4-3": 32444
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 145917,
+    "days": {
+      "3-0": 2415,
+      "3-1": 28131,
+      "3-2": 23304,
+      "4-1": 28131,
+      "4-2": 23304,
+      "4-3": 40632
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 3
+    },
+    "total": 145917,
+    "days": {
+      "3-0": 2415,
+      "3-1": 28131,
+      "3-2": 23304,
+      "4-1": 28131,
+      "4-2": 23304,
+      "4-3": 40632
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "trend",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 2
+    },
+    "total": 145917,
+    "days": {
+      "3-0": 2415,
+      "3-1": 28131,
+      "3-2": 23304,
+      "4-1": 28131,
+      "4-2": 23304,
+      "4-3": 40632
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "both",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 142603,
+    "days": {
+      "3-0": 51039,
+      "3-1": 31070,
+      "3-2": -2319,
+      "4-1": 31070,
+      "4-2": -2319,
+      "4-3": 34062
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 136303,
+    "days": {
+      "3-0": 50109,
+      "3-1": 28357,
+      "3-2": -2319,
+      "4-1": 28357,
+      "4-2": -2319,
+      "4-3": 34118
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 136225,
+    "days": {
+      "3-0": 5092,
+      "3-1": 19727,
+      "3-2": 33404,
+      "4-1": 19727,
+      "4-2": 33404,
+      "4-3": 24871
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "both",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 134500,
+    "days": {
+      "3-0": 8153,
+      "3-1": 42729,
+      "3-2": 12028,
+      "4-1": 42729,
+      "4-2": 12028,
+      "4-3": 16833
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 900,
+      "entry_z": 1.8,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 134276,
+    "days": {
+      "3-0": 4638,
+      "3-1": 19493,
+      "3-2": 33012,
+      "4-1": 19493,
+      "4-2": 33012,
+      "4-3": 24628
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 133663,
+    "days": {
+      "3-0": 2673,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "both",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 133146,
+    "days": {
+      "3-0": 2156,
+      "3-1": 38149,
+      "3-2": 12028,
+      "4-1": 38149,
+      "4-2": 12028,
+      "4-3": 30636
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 130557,
+    "days": {
+      "3-0": 15976,
+      "3-1": 21437,
+      "3-2": 23309,
+      "4-1": 21437,
+      "4-2": 23309,
+      "4-3": 25089
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 200,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 20.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 35.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "flips",
+      "trend_lookback": 400,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 130008,
+    "days": {
+      "3-0": 2723,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "both",
+      "trend_lookback": 100,
+      "trend_max": 50.0,
+      "flip_min": 1
+    },
+    "total": 129357,
+    "days": {
+      "3-0": 2072,
+      "3-1": 31328,
+      "3-2": 12546,
+      "4-1": 31328,
+      "4-2": 12546,
+      "4-3": 39537
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 150,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "tiered",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.2,
+      "exit_z": 0.0,
+      "target_mode": "scaled",
+      "base_target": 200,
+      "max_target": 200,
+      "decay_step": 200,
+      "keep_bot": true,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 128897,
+    "days": {
+      "3-0": 15620,
+      "3-1": 21209,
+      "3-2": 22999,
+      "4-1": 21209,
+      "4-2": 22999,
+      "4-3": 24861
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 80,
+      "max_target": 150,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "exit_z": 0.0,
+      "target_mode": "fixed",
+      "base_target": 120,
+      "max_target": 150,
+      "decay_step": 200,
+      "keep_bot": false,
+      "gate_mode": "none",
+      "trend_lookback": 100,
+      "trend_max": 9999.0,
+      "flip_min": 0
+    },
+    "total": 124556,
+    "days": {
+      "3-0": 40033,
+      "3-1": 18420,
+      "3-2": 10654,
+      "4-1": 18420,
+      "4-2": 10654,
+      "4-3": 26375
+    },
+    "error": null
+  }
+]

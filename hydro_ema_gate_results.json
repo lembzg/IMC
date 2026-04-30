@@ -1,0 +1,2002 @@
+[
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 40
+    },
+    "total": 165360,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 36155
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 50,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 200,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 400,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 700,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 50.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 80
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 100,
+      "slow_span": 1000,
+      "ema_trend_max": 9999.0,
+      "max_take_per_tick": 200
+    },
+    "total": 164966,
+    "days": {
+      "3-0": 52559,
+      "3-1": 25313,
+      "3-2": 12875,
+      "4-1": 25313,
+      "4-2": 12875,
+      "4-3": 36031
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 80
+    },
+    "total": 156549,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 36804
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 200
+    },
+    "total": 156549,
+    "days": {
+      "3-0": 3743,
+      "3-1": 35215,
+      "3-2": 22786,
+      "4-1": 35215,
+      "4-2": 22786,
+      "4-3": 36804
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 800,
+      "entry_z": 2.0,
+      "fast_span": 50,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 40
+    },
+    "total": 156406,
+    "days": {
+      "3-0": 3767,
+      "3-1": 35055,
+      "3-2": 22810,
+      "4-1": 35055,
+      "4-2": 22810,
+      "4-3": 36909
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 40
+    },
+    "total": 155714,
+    "days": {
+      "3-0": 3301,
+      "3-1": 28035,
+      "3-2": 24418,
+      "4-1": 28035,
+      "4-2": 24418,
+      "4-3": 47507
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 200
+    },
+    "total": 155576,
+    "days": {
+      "3-0": 3066,
+      "3-1": 28131,
+      "3-2": 24346,
+      "4-1": 28131,
+      "4-2": 24346,
+      "4-3": 47556
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.0,
+      "fast_span": 20,
+      "slow_span": 200,
+      "ema_trend_max": 20.0,
+      "max_take_per_tick": 80
+    },
+    "total": 155576,
+    "days": {
+      "3-0": 3066,
+      "3-1": 28131,
+      "3-2": 24346,
+      "4-1": 28131,
+      "4-2": 24346,
+      "4-3": 47556
+    },
+    "error": null
+  },
+  {
+    "params": {
+      "rolling_window": 700,
+      "entry_z": 2.4,
+      "fast_span": 20,
+      "slow_span": 400,
+      "ema_trend_max": 35.0,
+      "max_take_per_tick": 40
+    },
+    "total": 153187,
+    "days": {
+      "3-0": 52551,
+      "3-1": 25470,
+      "3-2": 12857,
+      "4-1": 25470,
+      "4-2": 12857,
+      "4-3": 23982
+    },
+    "error": null
+  }
+]
